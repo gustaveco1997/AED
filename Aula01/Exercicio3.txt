@@ -1,0 +1,2 @@
+Questão 3: Resposta: Define uma estrutura de ficha_de_aluno que contém os atributos nome,discplina,
+nota_prova1, nota_prova2;

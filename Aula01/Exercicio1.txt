@@ -1,0 +1,2 @@
+Questão 1: Resposta: A função espera receber 3 parâmetros, onde o retorno da função é a o resultado
+da soma do primeiro parametro elevado à 2 + (O segunto parametro + o terceiro parâmetro

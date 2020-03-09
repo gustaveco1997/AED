@@ -1,0 +1,2 @@
+Questão 4: Resposta: Caso queira armazenar 10 alunos na estrutura a melhor solução é criar um vetor
+da estrutura com 10 posições;
