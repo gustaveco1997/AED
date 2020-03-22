@@ -25,37 +25,20 @@ struct acoes{
 struct acoes acoes;
 
 int main(){
-        printf("Área de Atuação: ");
-        fflush(stdin);
-        fgets(acoes.Area_de_atuacao, 40, stdin);
+    printf("Área de Atuação: ");
+    fflush(stdin);
+    fgets(acoes.Area_de_atuacao, 40, stdin);
 
-        printf("Valor Atual : ");
-        scanf("%f",&acoes.Valor_Atual);
+    printf("Valor Atual : ");
+    scanf("%f",&acoes.Valor_Atual);
 
-        printf("Valor Anterior : ");
-        scanf("%f",&acoes.Valor_Anterior);
+    printf("Valor Anterior : ");
+    scanf("%f",&acoes.Valor_Anterior);
 
-        printf("Variação : ");
-        scanf("%lf",&acoes.Variacao);
+    printf("Variação : ");
+    scanf("%lf",&acoes.Variacao);
 
-        printf("Área de Atuação: %c\nValor Atual: %.2f\nValor Anterior: %.2f \nVariação: %.2lf\n",acoes.Area_de_atuacao,acoes.Valor_Atual,acoes.Valor_Anterior,acoes.Variacao);
-   /*for(int i=0;i<5;i++){
-        printf("Área de Atuação: ");
-        fflush(stdin);
-        fgets(acoes[i].Area_de_atuacao, 40, stdin);
+    printf("Área de Atuação: %c\nValor Atual: %.2f\nValor Anterior: %.2f \nVariação: %.2lf\n",acoes.Area_de_atuacao,acoes.Valor_Atual,acoes.Valor_Anterior,acoes.Variacao);
 
-        printf("Valor Atual : ");
-        scanf("%f",&acoes[i].Valor_Atual);
-
-        printf("Valor Anterior : ");
-        scanf("%f",&acoes[i].Valor_Anterior);
-
-        printf("Variação : ");
-        scanf("%f",&acoes[i].Variacao);
-
-
-    }
-*/
-
-return 0;
+    return 0;
 }
