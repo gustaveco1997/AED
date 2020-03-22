@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<conio.h>
+
  struct numeros {
         float numero1;
     };
@@ -15,10 +17,10 @@ float calcula(){
     }
     return resultado;
 }
-   
+
 
 int main(){
-    
+
     printf("Resultado....: %1.2f", calcula());
 
     return 0;
