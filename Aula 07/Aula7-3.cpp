@@ -20,34 +20,34 @@ using namespace std;
 
 typedef struct{
 	int placa;
-    char carro[40] ;
-    int tempoLimpeza ;
+	char carro[40] ;
+	int tempoLimpeza ;
 }clientes;
-	queue<clientes> fila;
-	void menu();
-	void insertClientes();
-	void buscaCliente();
-	void imprimeSize();
-	void removeCliente();
-	void imprimirFila();
+queue<clientes> fila;
+void menu();
+void insertClientes();
+void buscaCliente();
+void imprimeSize();
+void removeCliente();
+void imprimirFila();
 
 
 void insertClientes(){
 	char op = 's';
     
-    while(op == 's' || op == 'S'){
-    	clientes carros;
-    	printf("Digite a placa do veículo : ");
-	    scanf("%d",&carros.placa);
+	while(op == 's' || op == 'S'){
+		clientes carros;
+		printf("Digite a placa do veículo : ");
+		scanf("%d",&carros.placa);
 	
 		printf("Digite o nome do carro:");
-	    fflush(stdin);
-	    fgets(carros.carro, 40, stdin);
+		fflush(stdin);
+		fgets(carros.carro, 40, stdin);
 	
-	    printf("Digite o tempo de limpeza do veículo (Minutos) : ");
-	    scanf("%d",&carros.tempoLimpeza);
-	    
-	    fila.push(carros);
+		printf("Digite o tempo de limpeza do veículo (Minutos) : ");
+		scanf("%d",&carros.tempoLimpeza);
+		
+		fila.push(carros);
 	
 		getchar();
 		printf("Deseja adicionar um cliente ? (s/n)");
@@ -120,7 +120,7 @@ void removeCliente(){
 				filaorigem.pop();
 			
 			}
-	
+
 		}else if(filaorigem.front().tempoLimpeza>menortempo){
 			if(filaorigem.front().tempoLimpeza<filaaux.front().tempoLimpeza){
 				filaorigem.push(filaaux.front());
@@ -136,7 +136,7 @@ void removeCliente(){
 				filaorigem.pop();
 				
 			}
-	
+
 		}
 	}
 
@@ -181,47 +181,47 @@ void imprimirFila(){
 void menu(){
 	int opcao;
 	system("cls");
-    
+	
 	printf("1 - Inserir veículo na fila \n2 - Buscar veículo na fila \n3 - Verificar tamanho da fila\n4 - Remover um veículo da fila\n5 - Imprimir toda a fila\n");
-    scanf("%d",&opcao);
-    
-    switch(opcao){
-    	case 1:
-	    	system("cls");
-	    	insertClientes();
-	    	break;
-	   	case 2:
-	   		system("cls");
-	    	buscaCliente();
-	    	break;
-	   	case 3:
-	   		system("cls");
-	    	imprimeSize();
-	    	break;
-	   	case 4:
-	   		system("cls");
-	   		removeCliente();
-	   		break;
-	   	case 5:
-	   		system("cls");
-	   		imprimirFila();
-	   		break;
-	    	
-	   	default:
-	   		printf("Escolha uma opção válida \n");
-	   		system("pause");
-	   		system("cls");
-	   		menu();
-	   		
+	scanf("%d",&opcao);
+	
+	switch(opcao){
+		case 1:
+			system("cls");
+			insertClientes();
+			break;
+		case 2:
+			system("cls");
+			buscaCliente();
+			break;
+		case 3:
+			system("cls");
+			imprimeSize();
+			break;
+		case 4:
+			system("cls");
+			removeCliente();
+			break;
+		case 5:
+			system("cls");
+			imprimirFila();
+			break;
+			
+		default:
+			printf("Escolha uma opção válida \n");
+			system("pause");
+			system("cls");
+			menu();
+			
 	}
 }
 int main(){
-    setlocale(LC_ALL, "Portuguese");
+	setlocale(LC_ALL, "Portuguese");
     
     
 	menu();
 	
 	
-   	system("pause");
+	system("pause");
    
 }
