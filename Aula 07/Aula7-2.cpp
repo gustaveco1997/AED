@@ -46,6 +46,7 @@ void insertClientes(){
     
     while(op == 's' || op == 'S'){
     	clientes pessoas;
+		
     	printf("Digite o código do cliente : ");
 	    scanf("%d",&pessoas.codigo);
 	
