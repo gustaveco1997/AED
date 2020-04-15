@@ -145,16 +145,16 @@ void imprimirFila(){
 		}
 		printf("<-- FIM\n");
 	}
-	getch();
-	menu();
+    getch();
+    menu();
 }
 
 //Função que cria o Menu
 void menu(){
-	int opcao;
-	system("cls");
-    
-	printf("1 - Inserir cliente na fila \n2 - Buscar cliente na fila \n3 - Verificar tamanho da fila\n4 - Remover um cliente da fila\n5 - Imprimir toda a fila\n");
+    int opcao;
+    system("cls");
+
+    printf("1 - Inserir cliente na fila \n2 - Buscar cliente na fila \n3 - Verificar tamanho da fila\n4 - Remover um cliente da fila\n5 - Imprimir toda a fila\n");
     scanf("%d",&opcao);
     
     switch(opcao){
