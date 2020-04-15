@@ -158,33 +158,33 @@ void menu(){
     scanf("%d",&opcao);
     
     switch(opcao){
-    	case 1:
-	    	system("cls");
-	    	insertClientes();
-	    	break;
-	   	case 2:
-	   		system("cls");
-	    	buscaCliente();
-	    	break;
-	   	case 3:
-	   		system("cls");
-	    	imprimeSize();
-	    	break;
-	   	case 4:
-	   		system("cls");
-	   		removeCliente();
-	   		break;
-	   	case 5:
-	   		system("cls");
-	   		imprimirFila();
-	   		break;
-	    	
-	   	default:
-	   		printf("Escolha uma opção válida \n");
-	   		system("pause");
-	   		system("cls");
-	   		menu();
-	   		
+        case 1:
+            system("cls");
+            insertClientes();
+            break;
+        case 2:
+            system("cls");
+            buscaCliente();
+            break;
+        case 3:
+            system("cls");
+            imprimeSize();
+            break;
+        case 4:
+            system("cls");
+            removeCliente();
+            break;
+        case 5:
+            system("cls");
+            imprimirFila();
+            break;
+            
+        default:
+            printf("Escolha uma opção válida \n");
+            system("pause");
+            system("cls");
+            menu();
+            
 	}
 }
 int main(){
