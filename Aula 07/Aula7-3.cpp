@@ -1,10 +1,10 @@
 /*
-3 - Fa�a um algoritmo que:
+3 - Faça um algoritmo que:
 Tenha uma estrutura que contenha:
 Nome do carro;
 Tempo de limpeza.
 O algoritmo deve enfileirar os clientes na fila do caixa e ir consumindo, ou seja, removendo-os da fila baseado no tempo de limpeza.
-Use fun��es e fa�a as consist�ncias!
+Use funções e faça as consistências!
 */
 
 #include<locale.h>
@@ -20,8 +20,8 @@ using namespace std;
 
 typedef struct{
 	int placa;
-	char carro[40] ;
-	int tempoLimpeza ;
+    char carro[40] ;
+    int tempoLimpeza ;
 }clientes;
 	queue<clientes> fila;
 	void menu();
@@ -35,20 +35,20 @@ typedef struct{
 void insertClientes(){
 	char op = 's';
     
-	while(op == 's' || op == 'S'){
-		clientes carros;
-		printf("Digite a placa do ve�culo : ");
-		scanf("%d",&carros.placa);
-
+    while(op == 's' || op == 'S'){
+    	clientes carros;
+    	printf("Digite a placa do veículo : ");
+	    scanf("%d",&carros.placa);
+	
 		printf("Digite o nome do carro:");
-		fflush(stdin);
-		fgets(carros.carro, 40, stdin);
-
-		printf("Digite o tempo de limpeza do ve�culo (Minutos) : ");
-		scanf("%d",&carros.tempoLimpeza);
-		
-		fila.push(carros);
-
+	    fflush(stdin);
+	    fgets(carros.carro, 40, stdin);
+	
+	    printf("Digite o tempo de limpeza do veículo (Minutos) : ");
+	    scanf("%d",&carros.tempoLimpeza);
+	    
+	    fila.push(carros);
+	
 		getchar();
 		printf("Deseja adicionar um cliente ? (s/n)");
 		scanf("%c",&op);
@@ -67,13 +67,13 @@ void buscaCliente(){
 	fila2 = fila;
 	
 	
-	printf("Digite a placa do ve�culo � ser procurado na fila: \n");
+	printf("Digite a placa do veículo à ser procurado na fila: \n");
 	scanf("%d",&valor);
 	
 	while(!fila2.empty()){
 		if(fila2.front().placa==valor){
-			printf("C�digo %d encontrado na fila !\n",valor);
-			printf("Nome do carro � : %s\n",fila2.front().carro);
+			printf("Código %d encontrado na fila !\n",valor);
+			printf("Nome do carro é : %s\n",fila2.front().carro);
 			getch();
 			menu();
 			exit;
@@ -82,15 +82,15 @@ void buscaCliente(){
 		}
 		
 	}
-	printf("A placa %d n�o foi encontrado na fila ! \n",valor);
+	printf("A placa %d não foi encontrado na fila ! \n",valor);
 	getch();
 	menu();
 	exit;
 }
 void imprimeSize(){
-	printf("O tamanho da fila � %d :\n",fila.size());
-	printf("O primeiro veiculo da fila � : Nome - %s, Placa - %d\n",fila.front().carro,fila.front().placa);
-	printf("\nO �ltimo ve�culo da fila � :  Nome - %s, Placa - %d\n",fila.back().carro,fila.back().placa);
+	printf("O tamanho da fila é %d :\n",fila.size());
+	printf("O primeiro veiculo da fila é : Nome - %s, Placa - %d\n",fila.front().carro,fila.front().placa);
+	printf("\nO último veículo da fila é :  Nome - %s, Placa - %d\n",fila.back().carro,fila.back().placa);
 	getch();
 	menu();
 	exit;
@@ -154,7 +154,7 @@ void removeCliente(){
 		menu();
 		exit;
 	}else{
-		printf("Imposs�vel remover um cliente , pois  a fila est� vazia !");
+		printf("Impossível remover um cliente , pois  a fila está vazia !");
 		getch();
 		menu();
 		exit;
@@ -166,9 +166,9 @@ void imprimirFila(){
 	fila3 = fila;
 	
 	if(fila3.empty()){
-		printf("\nA fila est� vazia !");
+		printf("\nA fila está vazia !");
 	}else{
-		printf("\nIn�cio: -->");
+		printf("\nInício: -->");
 		while(!fila3.empty()){
 			printf("%s -",fila3.front().carro);
 			fila3.pop();
@@ -182,7 +182,7 @@ void menu(){
 	int opcao;
 	system("cls");
     
-	printf("1 - Inserir ve�culo na fila \n2 - Buscar ve�culo na fila \n3 - Verificar tamanho da fila\n4 - Remover um ve�culo da fila\n5 - Imprimir toda a fila\n");
+	printf("1 - Inserir veículo na fila \n2 - Buscar veículo na fila \n3 - Verificar tamanho da fila\n4 - Remover um veículo da fila\n5 - Imprimir toda a fila\n");
     scanf("%d",&opcao);
     
     switch(opcao){
@@ -208,7 +208,7 @@ void menu(){
 	   		break;
 	    	
 	   	default:
-	   		printf("Escolha uma op��o v�lida \n");
+	   		printf("Escolha uma opção válida \n");
 	   		system("pause");
 	   		system("cls");
 	   		menu();
