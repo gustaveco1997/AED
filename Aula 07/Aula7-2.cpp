@@ -103,6 +103,8 @@ void buscaCliente(){
 	menu();
 	exit;
 }
+
+//Função que mostra o tamanho da fila !
 void imprimeSize(){
     printf("O tamanho da fila é %d : \n",fila.size());
     printf("O primeiro cliente da fila é : Nome - %s, código - %d  \n",fila.front().nome,fila.front().codigo);
