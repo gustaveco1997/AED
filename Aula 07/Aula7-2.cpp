@@ -22,10 +22,10 @@ using namespace std;
 
 typedef struct{
 	int codigo;
-    char nome[40] ;
-    int qtd ;
-    float valor ;
-    float total ;
+	char nome[40] ;
+	int qtd ;
+	float valor ;
+	float total ;
 }clientes;
 
 //Criei a fila de acesso global para manipula-la através de todas as funções
@@ -45,24 +45,24 @@ void insertClientes(){
 	char op = 's';
     
     while(op == 's' || op == 'S'){
-    	clientes pessoas;
-		
-    	printf("Digite o código do cliente : ");
-	    scanf("%d",&pessoas.codigo);
+		clientes pessoas;
+
+		printf("Digite o código do cliente : ");
+		scanf("%d",&pessoas.codigo);
 	
 		printf("Digite o nome do cliente:");
-	    fflush(stdin);
-	    fgets(pessoas.nome, 40, stdin);
+		fflush(stdin);
+		fgets(pessoas.nome, 40, stdin);
 	
-	    printf("Digite a quantidade comprada : ");
-	    scanf("%d",&pessoas.qtd);
+		printf("Digite a quantidade comprada : ");
+		scanf("%d",&pessoas.qtd);
 	
-	    printf("Digite o valor unitário: ");
-	    scanf("%f",&pessoas.valor);
+		printf("Digite o valor unitário: ");
+		scanf("%f",&pessoas.valor);
 	
-	    pessoas.total = pessoas.qtd * pessoas.valor;
-	    fila.push(pessoas);
-	    
+		pessoas.total = pessoas.qtd * pessoas.valor;
+		fila.push(pessoas);
+		
 		getchar();
 		printf("Deseja adicionar um cliente ? (s/n)");
 		scanf("%c",&op);
@@ -104,12 +104,12 @@ void buscaCliente(){
 	exit;
 }
 void imprimeSize(){
-	printf("O tamanho da fila é %d : \n",fila.size());
-	printf("O primeiro cliente da fila é : Nome - %s, código - %d  \n",fila.front().nome,fila.front().codigo);
-	printf("O último elemento da fila é :  Nome - %s, código - %d  \n",fila.back().nome,fila.back().codigo);
-	getch();
-	menu();
-	exit;
+    printf("O tamanho da fila é %d : \n",fila.size());
+    printf("O primeiro cliente da fila é : Nome - %s, código - %d  \n",fila.front().nome,fila.front().codigo);
+    printf("O último elemento da fila é :  Nome - %s, código - %d  \n",fila.back().nome,fila.back().codigo);
+    getch();
+    menu();
+    exit;
 }
 
 
