@@ -25,11 +25,13 @@ int main(void) {
 
         switch(op) {
             case 1: temp = leTemperatura(op);
+            //Chamando função converteTemperatura passando a referência (Questão 03-B)
             conv = converteTemperatura(op, &temp);
             printf("%.2f C sao %.2f F.\n", temp, conv);
             break;
             
             case 2: temp = leTemperatura(op);
+            //Chamando função converteTemperatura passando a referência (Questão 03-B)
             conv = converteTemperatura(op, &temp);
             printf("%.2f F sao %.2f C.\n", temp, conv);
             break;
@@ -59,7 +61,7 @@ float leTemperatura(int opcao){
     return temperatura;
 }
 
-//Função converte temperatura recebendo o parâmetro temperatura como referencia !
+//Função converte temperatura recebendo o parâmetro temperatura como referencia ! (Questão 03 -A)
 float converteTemperatura(int opcao, float *temperatura) {
     float conversao;
     if(opcao == 1)
