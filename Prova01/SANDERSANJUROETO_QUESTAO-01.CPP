@@ -250,6 +250,7 @@ void imprimirPilha(){
 	menu();
 }
 
+
 //Função que gera o Menu
 void menu(){
 	int opcao;
