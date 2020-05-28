@@ -31,32 +31,149 @@ using namespace std;
 //Estrutura Vacinas
 typedef struct{
 	int numero_vacina;
-    int data_fabricacao;
-    int data_validade;
+    int dia_fabricacao;
+    int mes_fabricacao;
+    int ano_fabricacao;
+    int dia_validade;
+    int mes_validade;
+    int ano_validade;
     char nome_laboratorio[40];
 }vacina;
 
 
 
 void menu(list <vacina> vacinas);
-void subMenuProduzir(list <vacina> vacinas)
+void subMenuProduzir(list <vacina> vacinas);
+void produzVacinaLabRitmo(list <vacina> vacinas,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp);
+void produzVacinaLabEd(list <vacina> vacinas,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp);
+void produzVacinaLabRaja(list <vacina> vacinas,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp);
+void produzVacinaLabComp(list <vacina> vacinas,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp);
 
 
 
-void produzVacinaLabRitmo(list <vacina> vacinas,queue <vacina> filaLabRitmo){
+void produzVacinaLabRitmo(list <vacina> vacinas,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp){
+    vacina vacinas_Struct;
+    srand(1);
+
+    printf("########## Lab-ritmo Laboratório ##########\n");
+    printf("Produzindo Vacinas ...\n");
+    
+    if(filaLabRitmo.size()<30000){
+        for(int i=0;i<30000;i++){
+            vacinas_Struct[i].numero_vacina = i;
+            vacinas_Struct[i].dia_fabricacao = 23;
+            vacinas_Struct[i].mes_fabricacao = 05;
+            vacinas_Struct[i].ano_fabricacao = 2020;
+            vacinas_Struct[i].dia_validade = 23;
+            vacinas_Struct[i].mes_validade = 05;
+            vacinas_Struct[i].ano_validade = 2021;
+            strcpy(vacinas_Struct.nome_laboratorio ,'LAB-ritmo,');
+            vacinas.push_front(vacinas_Struct);
+            filaLabRitmo.push(vacinas_Struct);
+            
+        }
+        printf("Vacinas Produzidas com sucesso !!!");
+    }else{
+        printf("Não é possível produzir mais vacinas, pois atingiu a capacidade maxima diária de 3000 vacinas !");
+
+    }
+    subMenuProduzir(vacinas,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp);
+	exit;
+    
 
 }
 
-void produzVacinaLabEd(list <vacina> vacinas,queue <vacina> filaLabEd){
+void produzVacinaLabEd(list <vacina> vacinas,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp){
+    vacina vacinas_Struct;
+    srand(1);
+
+    printf("########## LABed Laboratório ##########\n");
+    printf("Produzindo Vacinas ...\n");
+    
+    if(filaLabEd.size()<20000){
+        for(int i=0;i<20000;i++){
+            vacinas_Struct[i].numero_vacina = i;
+            vacinas_Struct[i].dia_fabricacao = 23;
+            vacinas_Struct[i].mes_fabricacao = 05;
+            vacinas_Struct[i].ano_fabricacao = 2020;
+            vacinas_Struct[i].dia_validade = 23;
+            vacinas_Struct[i].mes_validade = 05;
+            vacinas_Struct[i].ano_validade = 2021;
+            strcpy(vacinas_Struct.nome_laboratorio ,'LABed');
+            vacinas.push_front(vacinas_Struct);
+            filaLabEd.push(vacinas_Struct);
+            
+        }
+        printf("Vacinas Produzidas com sucesso !!!");
+    }else{
+        printf("Não é possível produzir mais vacinas, pois atingiu a capacidade maxima diária de 20000 vacinas !");
+
+    }
+    subMenuProduzir(vacinas,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp);
+	exit;
 
 }
 
-void produzVacinaLabRaja(list <vacina> vacinas,queue <vacina> filaLabRaja){
+void produzVacinaLabRaja(list <vacina> vacinas,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp){
+    vacina vacinas_Struct;
+    srand(1);
+
+    printf("########## LABraja Laboratório ##########\n");
+    printf("Produzindo Vacinas ...\n");
+    
+    if(filaLabRaja.size()<18000){
+        for(int i=0;i<18000;i++){
+            vacinas_Struct[i].numero_vacina = i;
+            vacinas_Struct[i].dia_fabricacao = 23;
+            vacinas_Struct[i].mes_fabricacao = 05;
+            vacinas_Struct[i].ano_fabricacao = 2020;
+            vacinas_Struct[i].dia_validade = 23;
+            vacinas_Struct[i].mes_validade = 05;
+            vacinas_Struct[i].ano_validade = 2021;
+            strcpy(vacinas_Struct.nome_laboratorio ,'LABraja');
+            vacinas.push_front(vacinas_Struct);
+            filaLabRaja.push(vacinas_Struct);
+            
+        }
+        printf("Vacinas Produzidas com sucesso !!!");
+    }else{
+        printf("Não é possível produzir mais vacinas, pois atingiu a capacidade maxima diária de 18000 vacinas !");
+
+    }
+    subMenuProduzir(vacinas,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp);
+	exit;
+
 
 }
 
-void produzVacinaLabComp(list <vacina> vacinas,queue <vacina> filaLabComp){
+void produzVacinaLabComp(list <vacina> vacinas,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp){
+      vacina vacinas_Struct;
+    srand(1);
 
+    printf("########## LABcomp Laboratório ##########\n");
+    printf("Produzindo Vacinas ...\n");
+    
+    if(filaLabRaja.size()<15000){
+        for(int i=0;i<15000;i++){
+            vacinas_Struct[i].numero_vacina = i;
+            vacinas_Struct[i].dia_fabricacao = 23;
+            vacinas_Struct[i].mes_fabricacao = 05;
+            vacinas_Struct[i].ano_fabricacao = 2020;
+            vacinas_Struct[i].dia_validade = 23;
+            vacinas_Struct[i].mes_validade = 05;
+            vacinas_Struct[i].ano_validade = 2021;
+            strcpy(vacinas_Struct.nome_laboratorio ,'LABraja');
+            vacinas.push_front(vacinas_Struct);
+            filaLabComp.push(vacinas_Struct);
+            
+        }
+        printf("Vacinas Produzidas com sucesso !!!");
+    }else{
+        printf("Não é possível produzir mais vacinas, pois atingiu a capacidade maxima diária de 15000 vacinas !");
+
+    }
+    subMenuProduzir(vacinas,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp);
+	exit;
 }
 
 
