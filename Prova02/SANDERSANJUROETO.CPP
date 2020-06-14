@@ -7,7 +7,7 @@
 #include<string.h>
 #include<list>
 #include<tr1/functional>
-#include <time.h>
+#include<time.h>
 using namespace std;
 
 //Estrutura Vacinas
@@ -58,6 +58,8 @@ void entregaVacinaAfrica(list <vacina> listLabRitmo,list <vacina> listLabEd,list
 void entregaVacinaEuropa(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 void entregaVacinaOceania(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 void entregaVacinaAntartida(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
+void entregaVacinaPaisAmericaNorte(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
+void subMenuEntregaPaises(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 
 //Função que produz vacinas para o LabRitmo
 void produzVacinaLabRitmo(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
@@ -73,7 +75,7 @@ void produzVacinaLabRitmo(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
     if(filaLabRitmo.size()<30000){
         sobra = 30000 - filaLabRitmo.size();
         for(i=0;i<sobra;i++){
-           	srand( (unsigned)time(NULL) ); //Definindo a função rand() para gerar um número baseado no tempo atual
+           	srand(time(NULL)); //Definindo a função rand() para gerar um número baseado no tempo atual
             vacinas_Struct.numero_vacina = rand();
             srand(1); //Definindo função rand() para gerar um número começando do 1
             vacinas_Struct.dia_fabricacao = rand() % 30;
@@ -745,6 +747,16 @@ void entregaVacinaAfrica(list <vacina> listLabRitmo,list <vacina> listLabEd,list
     
 }
 
+void entregaVacinaPaisAmericaNorte(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
+    int i; //Variável para estrutura de repetição
+    printf("Vacinas entregues. Segue abaixo informações das vacinas que foram entregues !\n");
+    for(i=0;i<pilhaCDAmericaNorte.size();i++){
+        
+        printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDAmericaNorte.top().numero_vacina,pilhaCDAmericaNorte.top().dia_fabricacao,pilhaCDAmericaNorte.top().mes_fabricacao,pilhaCDAmericaNorte.top().ano_fabricacao,pilhaCDAmericaNorte.top().dia_validade,pilhaCDAmericaNorte.top().mes_validade,pilhaCDAmericaNorte.top().ano_validade,pilhaCDAmericaNorte.top().nome_laboratorio);
+        pilhaCDAmericaNorte.pop();
+    }
+}
+
 //Função que gera o submenu para produção de vacinas
 void subMenuProduzir(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     
@@ -841,7 +853,7 @@ void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vac
 	switch(opcao){
 		case 1:
             system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
+            if(!pilhaLogisLabRitmo.empty() || !pilhaLogisLabEd.empty() || !pilhaLogisLabRaja.empty() || !pilhaLogisLabComp.empty()){
                 entregaVacinaAmericaNorte(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
                 break;
             }else{
@@ -853,7 +865,7 @@ void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vac
                     
         case 2:
             system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
+            if(!pilhaLogisLabRitmo.empty() || !pilhaLogisLabEd.empty() || !pilhaLogisLabRaja.empty() || !pilhaLogisLabComp.empty()){
                 entregaVacinaAmericaSul(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
                 break;
             }else{
@@ -865,7 +877,7 @@ void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vac
         
         case 3:
             system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
+            if(!pilhaLogisLabRitmo.empty() || !pilhaLogisLabEd.empty() || !pilhaLogisLabRaja.empty() || !pilhaLogisLabComp.empty()){
                 entregaVacinaAmericaCentral(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
                 break;
             
@@ -878,7 +890,7 @@ void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vac
 
         case 4:
             system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
+            if(!pilhaLogisLabRitmo.empty() || !pilhaLogisLabEd.empty() || !pilhaLogisLabRaja.empty() || !pilhaLogisLabComp.empty()){
                 entregaVacinaAfrica(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
                 break;
             
@@ -891,7 +903,7 @@ void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vac
 
         case 5:
             system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
+            if(!pilhaLogisLabRitmo.empty() || !pilhaLogisLabEd.empty() || !pilhaLogisLabRaja.empty() || !pilhaLogisLabComp.empty()){
                 entregaVacinaAsia(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
                 break;
             
@@ -904,7 +916,7 @@ void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vac
 
         case 6:
             system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
+            if(!pilhaLogisLabRitmo.empty() || !pilhaLogisLabEd.empty() || !pilhaLogisLabRaja.empty() || !pilhaLogisLabComp.empty()){
                 entregaVacinaEuropa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
                 break;
             
@@ -917,7 +929,7 @@ void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vac
 
         case 7:
             system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
+            if(!pilhaLogisLabRitmo.empty() || !pilhaLogisLabEd.empty() || !pilhaLogisLabRaja.empty() || !pilhaLogisLabComp.empty()){
                 entregaVacinaOceania(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
                 break;
             
@@ -930,7 +942,7 @@ void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vac
 
         case 8:
             system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
+            if(!pilhaLogisLabRitmo.empty() || !pilhaLogisLabEd.empty() || !pilhaLogisLabRaja.empty() || !pilhaLogisLabComp.empty()){
                 entregaVacinaAntartida(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
                 break;
             
@@ -958,15 +970,15 @@ void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vac
 void subMenuEntregaPaises(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
 	int opcao;
 	system("cls");
-	printf("Escolha em qual continente será entregue as vacinas !");
-	printf("\n1 - América do Norte\n2 - América do Sul\n3 - América Central\n4 - África\n5 - Ásia\n6 - Europa\n7 - Oceania\n8 - Antártida\n9 - Voltar");
+	printf("Escolha o Centro de Distribuição");
+	printf("\n1 - CD América do Norte\n2 - CD América do Sul\n3 - CD América Central\n4 - CD África\n5 - CD Ásia\n6 - CD Europa\n7 - CD Oceania\n8 - CD Antártida\n9 - Voltar");
 	printf("\nEscolha uma opção : ");
 	scanf("%d",&opcao);
 	switch(opcao){
 		case 1:
             system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
-                entregaVacinaAmericaNorte(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+            if(!pilhaCDAmericaNorte.empty()){
+                entregaVacinaPaisAmericaNorte(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
                 break;
             }else{
                 printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
@@ -975,101 +987,7 @@ void subMenuEntregaPaises(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
         		break;
             }
                     
-        case 2:
-            system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
-                entregaVacinaAmericaSul(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-                break;
-            }else{
-                printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
-                getch();
-                subMenuEntrega(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-        		break;        
-            }
         
-        case 3:
-            system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
-                entregaVacinaAmericaCentral(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-                break;
-            
-            }else{
-                printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
-                getch();
-                subMenuEntrega(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-        		break;            
-            }
-
-        case 4:
-            system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
-                entregaVacinaAfrica(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-                break;
-            
-            }else{
-                printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
-                getch();
-                subMenuEntrega(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-        		break;     
-            }
-
-        case 5:
-            system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
-                entregaVacinaAsia(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-                break;
-            
-            }else{
-                printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
-                getch();
-                subMenuEntrega(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-        		break;
-            }
-
-        case 6:
-            system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
-                entregaVacinaEuropa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-                break;
-            
-            }else{
-                printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
-                getch();
-                subMenuEntrega(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-        		break;
-            }
-
-        case 7:
-            system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
-                entregaVacinaOceania(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-                break;
-            
-            }else{
-                printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
-                getch();
-                subMenuEntrega(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-        		break;
-            }
-
-        case 8:
-            system("cls");
-            if(pilhaLogisLabRitmo.size() == 100000 || pilhaLogisLabEd.size() == 100000 || pilhaLogisLabRaja.size() == 100000 || pilhaLogisLabComp.size() == 100000){
-                entregaVacinaAntartida(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-                break;
-            
-            }else{
-                printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
-                getch();
-                subMenuEntrega(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-        		break;
-            }
-            
-        case 9:
-        	system("cls");
-        	menu(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
-        	break;
-            
         default:
             printf("Escolha uma opção válida \n");
             system("pause");
@@ -1104,6 +1022,11 @@ void menu(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listL
         case 4:
         	system("cls");
         	subMenuEntrega(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        	break;
+
+        case 5:
+        	system("cls");
+        	subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
         	break;
      
         default:
