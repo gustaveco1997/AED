@@ -61,11 +61,22 @@ void entregaVacinaAntartida(list <vacina> listLabRitmo,list <vacina> listLabEd,l
 void entregaVacinaPaisAmericaNorte(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 void subMenuEntregaPaises(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 
+//Declaração de funções de entrega aos países de cada continente
+void entregaVacinaPaisAmericaNorte(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
+void entregaVacinaPaisAmericaSul(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
+void entregaVacinaPaisAmericaCentral(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
+void entregaVacinaPaisEuropa(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
+void entregaVacinaPaisAfrica(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
+void entregaVacinaPaisAsia(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
+void entregaVacinaPaisOceania(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
+void entregaVacinaPaisAntartida(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
+
 //Função que produz vacinas para o LabRitmo
 void produzVacinaLabRitmo(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     vacina vacinas_Struct; //Struct do tipo vacina
     int sobra; //Variável para armazer quantidade sobrando na fila
     int i; //Variável para laços de repetição
+    srand( (unsigned)time(NULL) ); //Definindo a função rand() para gerar um número baseado no tempo atual
     char laboratorio[40] = "LAB-ritmo"; //Variável com o nome do laboratório
 
     printf("########## Lab-ritmo Laboratório ##########\n");
@@ -75,14 +86,14 @@ void produzVacinaLabRitmo(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
     if(filaLabRitmo.size()<30000){
         sobra = 30000 - filaLabRitmo.size();
         for(i=0;i<sobra;i++){
-           	srand(time(NULL)); //Definindo a função rand() para gerar um número baseado no tempo atual
+           	
             vacinas_Struct.numero_vacina = rand();
-            srand(1); //Definindo função rand() para gerar um número começando do 1
-            vacinas_Struct.dia_fabricacao = rand() % 30;
-            vacinas_Struct.mes_fabricacao = rand() % 12;
+            
+            vacinas_Struct.dia_fabricacao = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
+            vacinas_Struct.mes_fabricacao = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
             vacinas_Struct.ano_fabricacao = 2020;
-            vacinas_Struct.dia_validade = rand() % 30;
-            vacinas_Struct.mes_validade = rand() % 12;
+            vacinas_Struct.dia_validade = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
+            vacinas_Struct.mes_validade = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
             vacinas_Struct.ano_validade = 2021;
             strcpy(vacinas_Struct.nome_laboratorio,laboratorio);
             listLabRitmo.push_front(vacinas_Struct);
@@ -103,6 +114,7 @@ void produzVacinaLabRitmo(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
 //Função que produz vacinas para o LabEd
 void produzVacinaLabEd(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     vacina vacinas_Struct; //Struct do tipo vacina !
+    srand( (unsigned)time(NULL) ); //Definindo a função rand() para gerar um número baseado no tempo atual
     int sobra; //Variável para armazer quantidade sobrando na fila
     int i; //Variável para laços de repetição
     char nomeLaboratorio[40] = "LABed"; //Variável com o nome do Laboratório
@@ -112,15 +124,13 @@ void produzVacinaLabEd(list <vacina> listLabRitmo,list <vacina> listLabEd,list <
   
     if(filaLabEd.size()<20000){
         sobra = 20000 - filaLabEd.size();
-        for(i=0;i<sobra;i++){
-           srand( (unsigned)time(NULL) ); //Definindo a função rand() para gerar um número baseado no tempo atual
+        for(i=0;i<sobra;i++){           
             vacinas_Struct.numero_vacina = rand();
-            srand(1); //Definindo função rand() para gerar um número começando do 1
-            vacinas_Struct.dia_fabricacao = rand() % 30;
-            vacinas_Struct.mes_fabricacao = rand() % 12;
+            vacinas_Struct.dia_fabricacao = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
+            vacinas_Struct.mes_fabricacao = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
             vacinas_Struct.ano_fabricacao = 2020;
-            vacinas_Struct.dia_validade = rand() % 30;
-            vacinas_Struct.mes_validade = rand() % 12;
+            vacinas_Struct.dia_validade = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
+            vacinas_Struct.mes_validade = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
             vacinas_Struct.ano_validade = 2021;
             strcpy(vacinas_Struct.nome_laboratorio ,nomeLaboratorio);
             listLabEd.push_front(vacinas_Struct);
@@ -140,6 +150,7 @@ void produzVacinaLabEd(list <vacina> listLabRitmo,list <vacina> listLabEd,list <
 //Função que produz vacinas para o LabRaja
 void produzVacinaLabRaja(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     vacina vacinas_Struct;//Struct do tipo vacina
+    srand( (unsigned)time(NULL) ); //Definindo a função rand() para gerar um número baseado no tempo atual
     int sobra; //Variável para armazer quantidade sobrando na fila
     int i; //Variável para laços de repetição
     char nomeLaboratorio[40] = "LABraja"; //Variável com o nome do laboratório
@@ -150,14 +161,12 @@ void produzVacinaLabRaja(list <vacina> listLabRitmo,list <vacina> listLabEd,list
     if(filaLabRaja.size()<18000){
         sobra = 18000 - filaLabRaja.size();
         for(i=0;i<sobra;i++){
-           srand( (unsigned)time(NULL) ); //Definindo a função rand() para gerar um número baseado no tempo atual
             vacinas_Struct.numero_vacina = rand();
-            srand(1); //Definindo função rand() para gerar um número começando do 1
-            vacinas_Struct.dia_fabricacao = rand() % 30;
-            vacinas_Struct.mes_fabricacao = rand() % 12;
+            vacinas_Struct.dia_fabricacao = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
+            vacinas_Struct.mes_fabricacao = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
             vacinas_Struct.ano_fabricacao = 2020;
-            vacinas_Struct.dia_validade = rand() % 30;
-            vacinas_Struct.mes_validade = rand() % 12;
+            vacinas_Struct.dia_validade = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
+            vacinas_Struct.mes_validade = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
             vacinas_Struct.ano_validade = 2021;
             strcpy(vacinas_Struct.nome_laboratorio ,nomeLaboratorio);
             listLabRaja.push_front(vacinas_Struct);
@@ -177,6 +186,7 @@ void produzVacinaLabRaja(list <vacina> listLabRitmo,list <vacina> listLabEd,list
 //Função que produz vacinas para o LabComp
 void produzVacinaLabComp(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
   	vacina vacinas_Struct; //Struct do tipo vacina
+    srand( (unsigned)time(NULL) ); //Definindo a função rand() para gerar um número baseado no tempo atual
     int sobra; //Variável para armazer quantidade sobrando na fila
     int i; //Variável para laços de repetição
   	char nomeLaboratorio[40] = "LABcomp"; //Variável com o nome do laboratório
@@ -186,15 +196,13 @@ void produzVacinaLabComp(list <vacina> listLabRitmo,list <vacina> listLabEd,list
   
     if(filaLabComp.size()<15000){
         sobra = 15000 - filaLabComp.size();
-        for(i=0;i<15000;i++){
-        	srand( (unsigned)time(NULL) ); //Definindo a função rand() para gerar um número baseado no tempo atual
+        for(i=0;i<15000;i++){       	
             vacinas_Struct.numero_vacina = rand();
-            srand(1); //Definindo função rand() para gerar um número começando do 1
-            vacinas_Struct.dia_fabricacao = rand() % 30;
-            vacinas_Struct.mes_fabricacao = rand() % 12;
+            vacinas_Struct.dia_fabricacao = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
+            vacinas_Struct.mes_fabricacao = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
             vacinas_Struct.ano_fabricacao = 2020;
-            vacinas_Struct.dia_validade = rand() % 30;
-            vacinas_Struct.mes_validade = rand() % 12;
+            vacinas_Struct.dia_validade = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
+            vacinas_Struct.mes_validade = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
             vacinas_Struct.ano_validade = 2021;
             strcpy(vacinas_Struct.nome_laboratorio ,nomeLaboratorio);
             listLabComp.push_front(vacinas_Struct);
@@ -747,13 +755,99 @@ void entregaVacinaAfrica(list <vacina> listLabRitmo,list <vacina> listLabEd,list
     
 }
 
+//Função que entrega vacinas aos países da América do Norte
 void entregaVacinaPaisAmericaNorte(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     int i; //Variável para estrutura de repetição
+    printf("Foram entregues %d vacinas no continente da América do Norte !\n", pilhaCDAmericaNorte.size());
     printf("Vacinas entregues. Segue abaixo informações das vacinas que foram entregues !\n");
     for(i=0;i<pilhaCDAmericaNorte.size();i++){
         
         printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDAmericaNorte.top().numero_vacina,pilhaCDAmericaNorte.top().dia_fabricacao,pilhaCDAmericaNorte.top().mes_fabricacao,pilhaCDAmericaNorte.top().ano_fabricacao,pilhaCDAmericaNorte.top().dia_validade,pilhaCDAmericaNorte.top().mes_validade,pilhaCDAmericaNorte.top().ano_validade,pilhaCDAmericaNorte.top().nome_laboratorio);
         pilhaCDAmericaNorte.pop();
+    }
+}
+
+//Função que entrega vacinas aos países da América do Sul
+void entregaVacinaPaisAmericaSul(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
+    int i; //Variável para estrutura de repetição
+    printf("Foram entregues %d vacinas no continente da América do Sul !\n", pilhaCDAmericaSul.size());
+    printf("Vacinas entregues. Segue abaixo informações das vacinas que foram entregues !\n");
+    for(i=0;i<pilhaCDAmericaSul.size();i++){
+        
+        printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDAmericaSul.top().numero_vacina,pilhaCDAmericaSul.top().dia_fabricacao,pilhaCDAmericaSul.top().mes_fabricacao,pilhaCDAmericaSul.top().ano_fabricacao,pilhaCDAmericaSul.top().dia_validade,pilhaCDAmericaSul.top().mes_validade,pilhaCDAmericaSul.top().ano_validade,pilhaCDAmericaSul.top().nome_laboratorio);
+        pilhaCDAmericaSul.pop();
+    }
+}
+
+//Função que entrega vacinas aos países da América Central
+void entregaVacinaPaisAmericaCentral(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
+    int i; //Variável para estrutura de repetição
+    printf("Foram entregues %d vacinas no continente da América do Central !\n", pilhaCDAmericaCentral.size());
+    printf("Vacinas entregues. Segue abaixo informações das vacinas que foram entregues !\n");
+    for(i=0;i<pilhaCDAmericaCentral.size();i++){
+        
+        printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDAmericaCentral.top().numero_vacina,pilhaCDAmericaCentral.top().dia_fabricacao,pilhaCDAmericaCentral.top().mes_fabricacao,pilhaCDAmericaCentral.top().ano_fabricacao,pilhaCDAmericaCentral.top().dia_validade,pilhaCDAmericaCentral.top().mes_validade,pilhaCDAmericaCentral.top().ano_validade,pilhaCDAmericaCentral.top().nome_laboratorio);
+        pilhaCDAmericaCentral.pop();
+    }
+}
+
+//Função que entrega vacinas aos países da Europa
+void entregaVacinaPaisEuropa(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
+    int i; //Variável para estrutura de repetição
+    printf("Foram entregues %d vacinas no continente da Europa !\n", pilhaCDEuropa.size());
+    printf("Vacinas entregues. Segue abaixo informações das vacinas que foram entregues !\n");
+    for(i=0;i<pilhaCDEuropa.size();i++){
+        
+        printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDEuropa.top().numero_vacina,pilhaCDEuropa.top().dia_fabricacao,pilhaCDEuropa.top().mes_fabricacao,pilhaCDEuropa.top().ano_fabricacao,pilhaCDEuropa.top().dia_validade,pilhaCDEuropa.top().mes_validade,pilhaCDEuropa.top().ano_validade,pilhaCDEuropa.top().nome_laboratorio);
+        pilhaCDEuropa.pop();
+    }
+}
+
+//Função que entrega vacinas aos países da África
+void entregaVacinaPaisAfrica(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
+    int i; //Variável para estrutura de repetição
+    printf("Foram entregues %d vacinas no continente da África !\n", pilhaCDAfrica.size());
+    printf("Vacinas entregues. Segue abaixo informações das vacinas que foram entregues !\n");
+    for(i=0;i<pilhaCDAfrica.size();i++){
+        
+        printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDAfrica.top().numero_vacina,pilhaCDAfrica.top().dia_fabricacao,pilhaCDAfrica.top().mes_fabricacao,pilhaCDAfrica.top().ano_fabricacao,pilhaCDAfrica.top().dia_validade,pilhaCDAfrica.top().mes_validade,pilhaCDAfrica.top().ano_validade,pilhaCDAfrica.top().nome_laboratorio);
+        pilhaCDAfrica.pop();
+    }
+}
+
+//Função que entrega vacinas aos países da Ásia
+void entregaVacinaPaisAsia(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
+    int i; //Variável para estrutura de repetição
+    printf("Foram entregues %d vacinas no continente da Ásia !\n", pilhaCDAsia.size());
+    printf("Vacinas entregues. Segue abaixo informações das vacinas que foram entregues !\n");
+    for(i=0;i<pilhaCDAsia.size();i++){
+        
+        printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDAsia.top().numero_vacina,pilhaCDAsia.top().dia_fabricacao,pilhaCDAsia.top().mes_fabricacao,pilhaCDAsia.top().ano_fabricacao,pilhaCDAsia.top().dia_validade,pilhaCDAsia.top().mes_validade,pilhaCDAsia.top().ano_validade,pilhaCDAsia.top().nome_laboratorio);
+        pilhaCDAsia.pop();
+    }
+}
+
+//Função que entrega vacinas aos países da Oceania
+void entregaVacinaPaisOceania(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
+    int i; //Variável para estrutura de repetição
+    printf("Foram entregues %d vacinas no continente da Oceania !\n", pilhaCDOceania.size());
+    printf("Vacinas entregues. Segue abaixo informações das vacinas que foram entregues !\n");
+    for(i=0;i<pilhaCDOceania.size();i++){
+        
+        printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDOceania.top().numero_vacina,pilhaCDOceania.top().dia_fabricacao,pilhaCDOceania.top().mes_fabricacao,pilhaCDOceania.top().ano_fabricacao,pilhaCDOceania.top().dia_validade,pilhaCDOceania.top().mes_validade,pilhaCDOceania.top().ano_validade,pilhaCDOceania.top().nome_laboratorio);
+        pilhaCDOceania.pop();
+    }
+}
+
+//Função que entrega vacinas aos países da Antártida
+void entregaVacinaPaisAntartida(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
+    int i; //Variável para estrutura de repetição
+    printf("Foram entregues %d vacinas no continente da Antártida !\n", pilhaCDAntartida.size());
+    printf("Vacinas entregues. Segue abaixo informações das vacinas que foram entregues !\n");
+    for(i=0;i<pilhaCDAntartida.size();i++){
+        
+        printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDAntartida.top().numero_vacina,pilhaCDAntartida.top().dia_fabricacao,pilhaCDAntartida.top().mes_fabricacao,pilhaCDAntartida.top().ano_fabricacao,pilhaCDAntartida.top().dia_validade,pilhaCDAntartida.top().mes_validade,pilhaCDAntartida.top().ano_validade,pilhaCDAntartida.top().nome_laboratorio);
+        pilhaCDAntartida.pop();
     }
 }
 
