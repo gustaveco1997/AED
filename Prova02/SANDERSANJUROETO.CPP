@@ -72,28 +72,71 @@ void entregaVacinaPaisAsia(list <vacina> listLabRitmo,list <vacina> listLabEd,li
 void entregaVacinaPaisOceania(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 void entregaVacinaPaisAntartida(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 
+//Declaração de funções de pesquisa
+void pesquisaNumeroVacina(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab);
 void pesquisaDataValidade(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab);
+void pesquisaDataFabricacao(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab);
+void pesquisaNomeLaboratorio(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab);
+
 //Função que produz vacinas para o LabRitmo
 void produzVacinaLabRitmo(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     vacina vacinas_Struct; //Struct do tipo vacina
     int sobra; //Variável para armazer quantidade sobrando na fila
     int i; //Variável para laços de repetição
+    int diaFabricacao;
+    int mesFabricacao;
+    int anoFabricacao;
+    int contador = 0;
+    
     srand( (unsigned)time(NULL) ); //Definindo a função rand() para gerar um número baseado no tempo atual
     char laboratorio[40] = "LAB-ritmo"; //Variável com o nome do laboratório
 
-    printf("########## Lab-ritmo Laboratório ##########\n");
-    printf("Produzindo Vacinas ...\n");
-    
-  
-    if(filaLabRitmo.size()<30000){
-        sobra = 30000 - filaLabRitmo.size();
+    printf("Digite a dia de fabricação : \n");
+    scanf("%d",&diaFabricacao);
+    if(diaFabricacao <=0 || diaFabricacao > 31){ //Verifica se o dia digitado é válido
+        printf("Dia inválido !");
+        system("pause");
+        system("cls");
+        produzVacinaLabRitmo(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    }
+
+    printf("Digite o mês de fabricação : \n");
+    scanf("%d",&mesFabricacao);
+    if(mesFabricacao <=0 || mesFabricacao > 12){ //Verifica se o mês digitado é válido
+        printf("Mês inválido !");
+        system("pause");
+        system("cls");
+        produzVacinaLabRitmo(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    }
+
+    printf("Digite o ano de fabricação : \n");
+    scanf("%d",&anoFabricacao);
+    if(anoFabricacao != 2020){ //Verifica se o ano é válido
+        printf("Ano inválido !");
+        system("pause");
+        system("cls");
+        produzVacinaLabRitmo(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    }
+    list<vacina>::iterator it;
+    for(it = listLabRitmo.begin(); it!=listLabRitmo.end();it++){ //Verifica a quantidade produzida na data digitado
+        if (diaFabricacao == it->dia_fabricacao && mesFabricacao == it->mes_fabricacao && anoFabricacao == it->ano_fabricacao){   
+            contador++;
+        }
+        
+    }
+    it--;
+
+    if(contador != 30000 && contador < 30000){  //Caso a quantidade produzida naquela data for menor que o total diário do laB ele produz
+        printf("########## Lab-ritmo Laboratório ##########\n");
+        printf("Produzindo Vacinas ...\n");
+        sobra = 30000 - contador;
         for(i=0;i<sobra;i++){
            	
             vacinas_Struct.numero_vacina = rand();
             
-            vacinas_Struct.dia_fabricacao = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
-            vacinas_Struct.mes_fabricacao = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
-            vacinas_Struct.ano_fabricacao = 2020;
+            vacinas_Struct.dia_fabricacao = diaFabricacao; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
+            vacinas_Struct.mes_fabricacao = mesFabricacao; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
+            vacinas_Struct.ano_fabricacao = anoFabricacao;
             vacinas_Struct.dia_validade = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
             vacinas_Struct.mes_validade = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
             vacinas_Struct.ano_validade = 2021;
@@ -119,18 +162,57 @@ void produzVacinaLabEd(list <vacina> listLabRitmo,list <vacina> listLabEd,list <
     srand( (unsigned)time(NULL) ); //Definindo a função rand() para gerar um número baseado no tempo atual
     int sobra; //Variável para armazer quantidade sobrando na fila
     int i; //Variável para laços de repetição
+    int diaFabricacao;
+    int mesFabricacao;
+    int anoFabricacao;
+    int contador = 0;
     char nomeLaboratorio[40] = "LABed"; //Variável com o nome do Laboratório
 
-    printf("########## LABed Laboratório ##########\n");
-    printf("Produzindo Vacinas ...\n");
+    printf("Digite a dia de fabricação : \n");
+    scanf("%d",&diaFabricacao);
+    if(diaFabricacao <=0 || diaFabricacao > 31){ //Verifica se o dia digitado é válido
+        printf("Dia inválido !");
+        system("pause");
+        system("cls");
+        produzVacinaLabEd(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    }
+
+    printf("Digite o mês de fabricação : \n");
+    scanf("%d",&mesFabricacao);
+    if(mesFabricacao <=0 || mesFabricacao > 12){ //Verifica se o mês digitado é válido
+        printf("Mês inválido !");
+        system("pause");
+        system("cls");
+        produzVacinaLabEd(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    }
+
+    printf("Digite o ano de fabricação : \n");
+    scanf("%d",&anoFabricacao);
+    if(anoFabricacao != 2020){ //Verifica se o ano é válido
+        printf("Ano inválido !");
+        system("pause");
+        system("cls");
+        produzVacinaLabEd(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    }
+    list<vacina>::iterator it;
+    for(it = listLabEd.begin(); it!=listLabEd.end();it++){ //Verifica a quantidade produzida na data digitado
+        if (diaFabricacao == it->dia_fabricacao && mesFabricacao == it->mes_fabricacao && anoFabricacao == it->ano_fabricacao){   
+            contador++;
+        }
+        
+    }
+    it--;
+
   
-    if(filaLabEd.size()<20000){
-        sobra = 20000 - filaLabEd.size();
+   if(contador != 20000 && contador < 20000){
+        printf("########## LABed Laboratório ##########\n");
+        printf("Produzindo Vacinas ...\n");
+        sobra = 20000 - contador;
         for(i=0;i<sobra;i++){           
             vacinas_Struct.numero_vacina = rand();
-            vacinas_Struct.dia_fabricacao = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
-            vacinas_Struct.mes_fabricacao = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
-            vacinas_Struct.ano_fabricacao = 2020;
+            vacinas_Struct.dia_fabricacao = diaFabricacao; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
+            vacinas_Struct.mes_fabricacao = mesFabricacao; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
+            vacinas_Struct.ano_fabricacao = anoFabricacao;
             vacinas_Struct.dia_validade = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
             vacinas_Struct.mes_validade = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
             vacinas_Struct.ano_validade = 2021;
@@ -155,18 +237,58 @@ void produzVacinaLabRaja(list <vacina> listLabRitmo,list <vacina> listLabEd,list
     srand( (unsigned)time(NULL) ); //Definindo a função rand() para gerar um número baseado no tempo atual
     int sobra; //Variável para armazer quantidade sobrando na fila
     int i; //Variável para laços de repetição
+    int diaFabricacao;
+    int mesFabricacao;
+    int anoFabricacao;
+    int contador = 0;
     char nomeLaboratorio[40] = "LABraja"; //Variável com o nome do laboratório
 
-    printf("########## LABraja Laboratório ##########\n");
-    printf("Produzindo Vacinas ...\n");
+    printf("Digite a dia de fabricação : \n");
+    scanf("%d",&diaFabricacao);
+    if(diaFabricacao <=0 || diaFabricacao > 31){ //Verifica se o dia digitado é válido
+        printf("Dia inválido !");
+        system("pause");
+        system("cls");
+        produzVacinaLabRaja(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    }
+
+    printf("Digite o mês de fabricação : \n");
+    scanf("%d",&mesFabricacao);
+    if(mesFabricacao <=0 || mesFabricacao > 12){ //Verifica se o mês digitado é válido
+        printf("Mês inválido !");
+        system("pause");
+        system("cls");
+        produzVacinaLabRaja(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    }
+
+    printf("Digite o ano de fabricação : \n");
+    scanf("%d",&anoFabricacao);
+    if(anoFabricacao != 2020){ //Verifica se o ano é válido
+        printf("Ano inválido !");
+        system("pause");
+        system("cls");
+        produzVacinaLabRaja(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    }
+    list<vacina>::iterator it;
+    for(it = listLabRaja.begin(); it!=listLabRaja.end();it++){ //Verifica a quantidade produzida na data digitado
+        if (diaFabricacao == it->dia_fabricacao && mesFabricacao == it->mes_fabricacao && anoFabricacao == it->ano_fabricacao){   
+            contador++;
+        }
+        
+    }
+    it--;
+
+
   
-    if(filaLabRaja.size()<18000){
-        sobra = 18000 - filaLabRaja.size();
+    if(contador != 18000 && contador < 18000){
+        printf("########## LABraja Laboratório ##########\n");
+        printf("Produzindo Vacinas ...\n");
+        sobra = 18000 - contador;
         for(i=0;i<sobra;i++){
             vacinas_Struct.numero_vacina = rand();
-            vacinas_Struct.dia_fabricacao = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
-            vacinas_Struct.mes_fabricacao = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
-            vacinas_Struct.ano_fabricacao = 2020;
+            vacinas_Struct.dia_fabricacao = diaFabricacao; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
+            vacinas_Struct.mes_fabricacao = mesFabricacao; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
+            vacinas_Struct.ano_fabricacao = anoFabricacao;
             vacinas_Struct.dia_validade = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
             vacinas_Struct.mes_validade = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
             vacinas_Struct.ano_validade = 2021;
@@ -191,18 +313,58 @@ void produzVacinaLabComp(list <vacina> listLabRitmo,list <vacina> listLabEd,list
     srand( (unsigned)time(NULL) ); //Definindo a função rand() para gerar um número baseado no tempo atual
     int sobra; //Variável para armazer quantidade sobrando na fila
     int i; //Variável para laços de repetição
+    int diaFabricacao;
+    int mesFabricacao;
+    int anoFabricacao;
+    int contador = 0;
   	char nomeLaboratorio[40] = "LABcomp"; //Variável com o nome do laboratório
+
+    printf("Digite a dia de fabricação : \n");
+    scanf("%d",&diaFabricacao);
+    if(diaFabricacao <=0 || diaFabricacao > 31){ //Verifica se o dia digitado é válido
+        printf("Dia inválido !");
+        system("pause");
+        system("cls");
+        produzVacinaLabComp(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    }
+
+    printf("Digite o mês de fabricação : \n");
+    scanf("%d",&mesFabricacao);
+    if(mesFabricacao <=0 || mesFabricacao > 12){ //Verifica se o mês digitado é válido
+        printf("Mês inválido !");
+        system("pause");
+        system("cls");
+        produzVacinaLabComp(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    }
+
+    printf("Digite o ano de fabricação : \n");
+    scanf("%d",&anoFabricacao);
+    if(anoFabricacao != 2020){ //Verifica se o ano é válido
+        printf("Ano inválido !");
+        system("pause");
+        system("cls");
+        produzVacinaLabComp(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    }
+    list<vacina>::iterator it;
+    for(it = listLabComp.begin(); it!=listLabComp.end();it++){ //Verifica a quantidade produzida na data digitado
+        if (diaFabricacao == it->dia_fabricacao && mesFabricacao == it->mes_fabricacao && anoFabricacao == it->ano_fabricacao){   
+            contador++;
+        }
+        
+    }
+    it--;
+
 
     printf("########## LABcomp Laboratório ##########\n");
     printf("Produzindo Vacinas ...\n");
   
-    if(filaLabComp.size()<15000){
-        sobra = 15000 - filaLabComp.size();
-        for(i=0;i<15000;i++){       	
+    if(contador != 15000 && contador < 15000){
+        sobra = 15000 - contador;
+        for(i=0;i<sobra;i++){       	
             vacinas_Struct.numero_vacina = rand();
-            vacinas_Struct.dia_fabricacao = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
-            vacinas_Struct.mes_fabricacao = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
-            vacinas_Struct.ano_fabricacao = 2020;
+            vacinas_Struct.dia_fabricacao = diaFabricacao; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
+            vacinas_Struct.mes_fabricacao = mesFabricacao; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
+            vacinas_Struct.ano_fabricacao = anoFabricacao;
             vacinas_Struct.dia_validade = rand() % 29 + 1; //Usa-se a função rand() de 0 à 29 , porém somando +1, para nunca dar 0
             vacinas_Struct.mes_validade = rand() % 11 + 1; //Usa-se a função rand() de 0 à 11 , porém somando +1, para nunca dar 0
             vacinas_Struct.ano_validade = 2021;
@@ -882,6 +1044,7 @@ void pesquisaDataValidade(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
     int diaValidade;
     int mesValidade;
     int anoValidade;
+    int i=0;
     
 
     printf("Digite o dia da validade : ");
@@ -895,14 +1058,13 @@ void pesquisaDataValidade(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
     
     
     if(laboratorio == 1){     
-        //int i=0;
         list<vacina>::iterator it;
         printf("Busca:\t");
         for(it = listLabRitmo.begin(); it!=listLabRitmo.end();it++){
             if (diaValidade == it->dia_validade && mesValidade == it->mes_validade && anoValidade == it->ano_validade ){
                 printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+                i++;
             }
-            //i++;
         }
         it--;
     }else if(laboratorio == 2){
@@ -913,8 +1075,8 @@ void pesquisaDataValidade(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
         for(it = listLabEd.begin(); it!=listLabEd.end();it++){
             if (diaValidade == it->dia_validade && mesValidade == it->mes_validade && anoValidade == it->ano_validade ){
                 printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+                i++;
             }
-            //i++;
         }
         it--;
 
@@ -926,8 +1088,8 @@ void pesquisaDataValidade(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
         for(it = listLabRaja.begin(); it!=listLabRaja.end();it++){
             if (diaValidade == it->dia_validade && mesValidade == it->mes_validade && anoValidade == it->ano_validade ){
                 printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+                i++;
             }
-            //i++;
         }
         it--;
 
@@ -939,10 +1101,214 @@ void pesquisaDataValidade(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
         for(it = listLabComp.begin(); it!=listLabComp.end();it++){
             if (diaValidade == it->dia_validade && mesValidade == it->mes_validade && anoValidade == it->ano_validade ){
                 printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+                i++;
             }
-            //i++;
         }
         it--;
+    }
+
+    if(i > 0){
+        printf("\nForam encontrados %d registro(s) !",i);
+    }else{
+        printf("\nNão foi encontrado nenhum registro!");
+    }
+    getch();
+    subMenuPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    exit;
+
+}
+
+void pesquisaDataFabricacao(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
+    int laboratorio = lab;
+    int diaFabricacao;
+    int mesFabricacao;
+    int anoFabricacao;
+    int i=0;
+    
+
+    printf("Digite o dia da fabricação : ");
+    scanf("%d",&diaFabricacao);
+
+    printf("Digite o mês da fabricação : ");
+    scanf("%d",&mesFabricacao);
+
+    printf("Digite o ano da fabricação : ");
+    scanf("%d",&anoFabricacao);
+    
+    
+    if(laboratorio == 1){     
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabRitmo.begin(); it!=listLabRitmo.end();it++){
+            if (diaFabricacao == it->dia_fabricacao && mesFabricacao == it->mes_fabricacao && anoFabricacao == it->ano_fabricacao ){
+                printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+                i++;
+            }
+        }
+        it--;
+    }else if(laboratorio == 2){
+
+        
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabEd.begin(); it!=listLabEd.end();it++){
+            if (diaFabricacao == it->dia_fabricacao && mesFabricacao == it->mes_fabricacao && anoFabricacao == it->ano_fabricacao ){
+                printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+                i++;
+            }
+        }
+        it--;
+
+    }else if(laboratorio == 3){
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabRaja.begin(); it!=listLabRaja.end();it++){
+            if (diaFabricacao == it->dia_fabricacao && mesFabricacao == it->mes_fabricacao && anoFabricacao == it->ano_fabricacao ){
+                printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+                i++;
+            }
+        }
+        it--;
+
+    }else if(laboratorio == 4){
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabComp.begin(); it!=listLabComp.end();it++){
+            if (diaFabricacao == it->dia_fabricacao && mesFabricacao == it->mes_fabricacao && anoFabricacao == it->ano_fabricacao ){
+                printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+                i++;
+            }
+        }
+        it--;
+    }
+
+    if(i > 0){
+        printf("\nForam encontrados %d registro(s) !",i);
+    }else{
+        printf("\nNão foi encontrado nenhum registro!");
+    }
+    getch();
+    subMenuPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    exit;
+
+}
+
+void pesquisaNumeroVacina(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
+    int laboratorio = lab;
+    int numeroVacina;
+    int i=0;
+    
+    printf("Digite o número da vacina : ");
+    scanf("%d",&numeroVacina);
+
+  
+    if(laboratorio == 1){     
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabRitmo.begin(); it!=listLabRitmo.end();it++){
+            if (numeroVacina == it->numero_vacina){
+                printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+                i++;
+            }
+        }
+        it--;
+    }else if(laboratorio == 2){  
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabEd.begin(); it!=listLabEd.end();it++){
+            if (numeroVacina == it->numero_vacina){
+                printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+                i++;
+            }
+        }
+        it--;
+
+    }else if(laboratorio == 3){    
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabRaja.begin(); it!=listLabRaja.end();it++){
+            if (numeroVacina == it->numero_vacina){
+                printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+                i++;
+            }
+            
+        }
+        it--;
+
+    }else if(laboratorio == 4){
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabComp.begin(); it!=listLabComp.end();it++){
+            if (numeroVacina == it->numero_vacina){
+                printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+                i++;
+            }
+        }
+        it--;
+    }
+    if(i > 0){
+        printf("\nForam encontrados %d registro(s) !",i);
+    }else{
+        printf("\nNão foi encontrado nenhum registro!");
+    }
+    getch();
+    subMenuPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    exit;
+
+}
+
+void pesquisaNomeLaboratorio(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
+    int laboratorio = lab;
+    int i=0;
+    
+    
+    
+    if(laboratorio == 1){
+        char Nomelaboratorio[40] = "LAB-ritmo";     
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabRitmo.begin(); it!=listLabRitmo.end();it++){     
+            printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+            i++;     
+        }
+        it--;
+    }else if(laboratorio == 2){ 
+        char Nomelaboratorio[40] = "LABed"; 
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabEd.begin(); it!=listLabEd.end();it++){    
+            printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+            i++;  
+        }
+        it--;
+
+    }else if(laboratorio == 3){ 
+        char Nomelaboratorio[40] = "LABraja";   
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabRaja.begin(); it!=listLabRaja.end();it++){
+            printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+            i++;    
+        }
+        it--;
+
+    }else if(laboratorio == 4){
+        char Nomelaboratorio[40] = "LABcomp";
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabComp.begin(); it!=listLabComp.end();it++){
+            
+            printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+            i++;
+            
+        }
+        it--;
+    }
+    
+    if(i > 0){
+        printf("\nForam encontrados %d registro(s) !",i);
+    }else{
+        printf("\nNão foi encontrado nenhum registro!");
     }
     getch();
     subMenuPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
@@ -1358,9 +1724,24 @@ void subMenuTipoPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,lis
 	scanf("%d",&opcao);
 	switch(opcao){
 		case 1:
-                system("cls");     
-                pesquisaDataValidade(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida,lab);
-                break;
+            system("cls");     
+            pesquisaDataValidade(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida,lab);
+            break;
+
+        case 2:
+            system("cls");     
+            pesquisaDataFabricacao(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida,lab);
+            break;
+
+        case 3:
+            system("cls");     
+            pesquisaNumeroVacina(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida,lab);
+            break;
+
+        case 4:
+            system("cls");     
+            pesquisaNomeLaboratorio(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida,lab);
+            break;
            
         
         case 5:
