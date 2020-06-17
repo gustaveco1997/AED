@@ -36,7 +36,8 @@ void menu(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listL
 void subMenuProduzir(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 void subMenuRetirar (list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
-
+void subMenuTipoPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab);
+void subMenuPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 //Declaração de funções de Produção de cada Laboratório
 void produzVacinaLabRitmo(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 void produzVacinaLabEd(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
@@ -71,6 +72,7 @@ void entregaVacinaPaisAsia(list <vacina> listLabRitmo,list <vacina> listLabEd,li
 void entregaVacinaPaisOceania(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 void entregaVacinaPaisAntartida(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 
+void pesquisaDataValidade(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab);
 //Função que produz vacinas para o LabRitmo
 void produzVacinaLabRitmo(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     vacina vacinas_Struct; //Struct do tipo vacina
@@ -765,6 +767,9 @@ void entregaVacinaPaisAmericaNorte(list <vacina> listLabRitmo,list <vacina> list
         printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDAmericaNorte.top().numero_vacina,pilhaCDAmericaNorte.top().dia_fabricacao,pilhaCDAmericaNorte.top().mes_fabricacao,pilhaCDAmericaNorte.top().ano_fabricacao,pilhaCDAmericaNorte.top().dia_validade,pilhaCDAmericaNorte.top().mes_validade,pilhaCDAmericaNorte.top().ano_validade,pilhaCDAmericaNorte.top().nome_laboratorio);
         pilhaCDAmericaNorte.pop();
     }
+    getch();
+    subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    exit;
 }
 
 //Função que entrega vacinas aos países da América do Sul
@@ -777,6 +782,9 @@ void entregaVacinaPaisAmericaSul(list <vacina> listLabRitmo,list <vacina> listLa
         printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDAmericaSul.top().numero_vacina,pilhaCDAmericaSul.top().dia_fabricacao,pilhaCDAmericaSul.top().mes_fabricacao,pilhaCDAmericaSul.top().ano_fabricacao,pilhaCDAmericaSul.top().dia_validade,pilhaCDAmericaSul.top().mes_validade,pilhaCDAmericaSul.top().ano_validade,pilhaCDAmericaSul.top().nome_laboratorio);
         pilhaCDAmericaSul.pop();
     }
+    getch();
+    subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    exit;
 }
 
 //Função que entrega vacinas aos países da América Central
@@ -789,6 +797,9 @@ void entregaVacinaPaisAmericaCentral(list <vacina> listLabRitmo,list <vacina> li
         printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDAmericaCentral.top().numero_vacina,pilhaCDAmericaCentral.top().dia_fabricacao,pilhaCDAmericaCentral.top().mes_fabricacao,pilhaCDAmericaCentral.top().ano_fabricacao,pilhaCDAmericaCentral.top().dia_validade,pilhaCDAmericaCentral.top().mes_validade,pilhaCDAmericaCentral.top().ano_validade,pilhaCDAmericaCentral.top().nome_laboratorio);
         pilhaCDAmericaCentral.pop();
     }
+    getch();
+    subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    exit;
 }
 
 //Função que entrega vacinas aos países da Europa
@@ -801,6 +812,9 @@ void entregaVacinaPaisEuropa(list <vacina> listLabRitmo,list <vacina> listLabEd,
         printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDEuropa.top().numero_vacina,pilhaCDEuropa.top().dia_fabricacao,pilhaCDEuropa.top().mes_fabricacao,pilhaCDEuropa.top().ano_fabricacao,pilhaCDEuropa.top().dia_validade,pilhaCDEuropa.top().mes_validade,pilhaCDEuropa.top().ano_validade,pilhaCDEuropa.top().nome_laboratorio);
         pilhaCDEuropa.pop();
     }
+    getch();
+    subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    exit;
 }
 
 //Função que entrega vacinas aos países da África
@@ -813,6 +827,9 @@ void entregaVacinaPaisAfrica(list <vacina> listLabRitmo,list <vacina> listLabEd,
         printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDAfrica.top().numero_vacina,pilhaCDAfrica.top().dia_fabricacao,pilhaCDAfrica.top().mes_fabricacao,pilhaCDAfrica.top().ano_fabricacao,pilhaCDAfrica.top().dia_validade,pilhaCDAfrica.top().mes_validade,pilhaCDAfrica.top().ano_validade,pilhaCDAfrica.top().nome_laboratorio);
         pilhaCDAfrica.pop();
     }
+    getch();
+    subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    exit;
 }
 
 //Função que entrega vacinas aos países da Ásia
@@ -825,6 +842,9 @@ void entregaVacinaPaisAsia(list <vacina> listLabRitmo,list <vacina> listLabEd,li
         printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDAsia.top().numero_vacina,pilhaCDAsia.top().dia_fabricacao,pilhaCDAsia.top().mes_fabricacao,pilhaCDAsia.top().ano_fabricacao,pilhaCDAsia.top().dia_validade,pilhaCDAsia.top().mes_validade,pilhaCDAsia.top().ano_validade,pilhaCDAsia.top().nome_laboratorio);
         pilhaCDAsia.pop();
     }
+    getch();
+    subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    exit;
 }
 
 //Função que entrega vacinas aos países da Oceania
@@ -837,6 +857,9 @@ void entregaVacinaPaisOceania(list <vacina> listLabRitmo,list <vacina> listLabEd
         printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDOceania.top().numero_vacina,pilhaCDOceania.top().dia_fabricacao,pilhaCDOceania.top().mes_fabricacao,pilhaCDOceania.top().ano_fabricacao,pilhaCDOceania.top().dia_validade,pilhaCDOceania.top().mes_validade,pilhaCDOceania.top().ano_validade,pilhaCDOceania.top().nome_laboratorio);
         pilhaCDOceania.pop();
     }
+    getch();
+    subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    exit;
 }
 
 //Função que entrega vacinas aos países da Antártida
@@ -849,6 +872,82 @@ void entregaVacinaPaisAntartida(list <vacina> listLabRitmo,list <vacina> listLab
         printf("Codigo: %d\nData de Fabricação: %d/%d/%d\nData de Validade: %d/%d/%d\nNome do Laboratório: %s\n#######################################################\n",pilhaCDAntartida.top().numero_vacina,pilhaCDAntartida.top().dia_fabricacao,pilhaCDAntartida.top().mes_fabricacao,pilhaCDAntartida.top().ano_fabricacao,pilhaCDAntartida.top().dia_validade,pilhaCDAntartida.top().mes_validade,pilhaCDAntartida.top().ano_validade,pilhaCDAntartida.top().nome_laboratorio);
         pilhaCDAntartida.pop();
     }
+    getch();
+    subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    exit;
+}
+
+void pesquisaDataValidade(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
+    int laboratorio = lab;
+    int diaValidade;
+    int mesValidade;
+    int anoValidade;
+    
+
+    printf("Digite o dia da validade : ");
+    scanf("%d",&diaValidade);
+
+    printf("Digite o mês da validade : ");
+    scanf("%d",&mesValidade);
+
+    printf("Digite o ano da validade : ");
+    scanf("%d",&anoValidade);
+    
+    
+    if(laboratorio == 1){     
+        //int i=0;
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabRitmo.begin(); it!=listLabRitmo.end();it++){
+            if (diaValidade == it->dia_validade && mesValidade == it->mes_validade && anoValidade == it->ano_validade ){
+                printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+            }
+            //i++;
+        }
+        it--;
+    }else if(laboratorio == 2){
+
+        //int i=0;
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabEd.begin(); it!=listLabEd.end();it++){
+            if (diaValidade == it->dia_validade && mesValidade == it->mes_validade && anoValidade == it->ano_validade ){
+                printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+            }
+            //i++;
+        }
+        it--;
+
+    }else if(laboratorio == 3){
+
+        //int i=0;
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabRaja.begin(); it!=listLabRaja.end();it++){
+            if (diaValidade == it->dia_validade && mesValidade == it->mes_validade && anoValidade == it->ano_validade ){
+                printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+            }
+            //i++;
+        }
+        it--;
+
+    }else if(laboratorio == 4){
+
+        //int i=0;
+        list<vacina>::iterator it;
+        printf("Busca:\t");
+        for(it = listLabComp.begin(); it!=listLabComp.end();it++){
+            if (diaValidade == it->dia_validade && mesValidade == it->mes_validade && anoValidade == it->ano_validade ){
+                printf ("Código: %d\nData de Validade:%d/%d/%d\nData de Fabricação:%d/%d/%d\nNome Laboratório:%s\n##############################\n\n",it->numero_vacina,it->dia_validade,it->mes_validade,it->ano_validade,it->dia_fabricacao,it->mes_fabricacao,it->ano_fabricacao,it->nome_laboratorio);
+            }
+            //i++;
+        }
+        it--;
+    }
+    getch();
+    subMenuPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+    exit;
+
 }
 
 //Função que gera o submenu para produção de vacinas
@@ -1077,18 +1176,205 @@ void subMenuEntregaPaises(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
             }else{
                 printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
                 getch();
-                subMenuEntrega(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+                subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
         		break;
             }
+
+        case 2:
+            system("cls");
+            if(!pilhaCDAmericaSul.empty()){
+                entregaVacinaPaisAmericaSul(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+                break;
+            }else{
+                printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
+                getch();
+                subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        		break;
+            }
+
+        case 3:
+            system("cls");
+            if(!pilhaCDAmericaCentral.empty()){
+                entregaVacinaPaisAmericaCentral(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+                break;
+            }else{
+                printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
+                getch();
+                subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        		break;
+            }
+        
+        case 4:
+            system("cls");
+            if(!pilhaCDAfrica.empty()){
+                entregaVacinaPaisAfrica(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+                break;
+            }else{
+                printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
+                getch();
+                subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        		break;
+            }
+
+        case 5:
+            system("cls");
+            if(!pilhaCDAsia.empty()){
+                entregaVacinaPaisAsia(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+                break;
+            }else{
+                printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
+                getch();
+                subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        		break;
+            }
+
+        case 6:
+            system("cls");
+            if(!pilhaCDEuropa.empty()){
+                entregaVacinaPaisEuropa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+                break;
+            }else{
+                printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
+                getch();
+                subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        		break;
+            }
+
+        case 7:
+            system("cls");
+            if(!pilhaCDOceania.empty()){
+                entregaVacinaPaisOceania(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+                break;
+            }else{
+                printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
+                getch();
+                subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        		break;
+            }
+
+        case 8:
+            system("cls");
+            if(!pilhaCDAntartida.empty()){
+                entregaVacinaPaisAntartida(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+                break;
+            }else{
+                printf("Não existem pilhas da LOGIS cheias para sair para entrega !");
+                getch();
+                subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        		break;
+            }
+        
+        case 9:
+        	system("cls");
+        	menu(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        	break;
                     
         
         default:
             printf("Escolha uma opção válida \n");
             system("pause");
             system("cls");
-            subMenuEntrega(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+            subMenuEntregaPaises(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
 	}
 	
+}
+
+void subMenuPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
+    int opcao;
+	system("cls");
+	printf("Escolha de qual laboratório deseja realizar a pesquisa : ");
+	printf("\n1 - Lab-Ritmo\n2 - Lab-Ed\n3 - Lab-Raja\n4 - Lab-Comp\n5 - Voltar");
+	printf("\nEscolha uma opção : ");
+	scanf("%d",&opcao);
+	switch(opcao){
+		case 1:
+            system("cls");
+            if(!listLabRitmo.empty()){
+                subMenuTipoPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida,1);
+                break;
+            }else{
+                printf("Não existem registros na lista do Lab Ritmo !");
+                getch();
+                subMenuPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        		break;
+            }
+        case 2:
+            system("cls");
+            if(!listLabEd.empty()){
+                subMenuTipoPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida,2);
+                break;
+            }else{
+                printf("Não existem registros na lista do Lab ED !");
+                getch();
+                subMenuPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        		break;
+            }
+        
+        case 3:
+            system("cls");
+            if(!listLabRaja.empty()){
+                subMenuTipoPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida,3);
+                break;
+            }else{
+                printf("Não existem registros na lista do Lab Raja !");
+                getch();
+                subMenuPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        		break;
+            }
+
+        case 4:
+            system("cls");
+            if(!listLabComp.empty()){
+                subMenuTipoPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida,4);
+                break;
+            }else{
+                printf("Não existem registros na lista do Lab Comp !");
+                getch();
+                subMenuPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        		break;
+            }
+        
+        case 5:
+        	system("cls");
+        	menu(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        	break;
+                    
+        
+        default:
+            printf("Escolha uma opção válida \n");
+            system("pause");
+            system("cls");
+            subMenuPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+	}
+}
+
+void subMenuTipoPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
+    int opcao;
+    int laboratorio = lab;
+	system("cls");
+	printf("Escolha o tipo da pesquisa : ");
+	printf("\n1 - Data Validade\n2 - Data Fabricação\n3 - Número da Vacina\n4 - Nome do Laboratóriop\n5 - Voltar");
+	printf("\nEscolha uma opção : ");
+	scanf("%d",&opcao);
+	switch(opcao){
+		case 1:
+                system("cls");     
+                pesquisaDataValidade(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida,lab);
+                break;
+           
+        
+        case 5:
+        	system("cls");
+        	subMenuPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+        	break;
+                    
+        
+        default:
+            printf("Escolha uma opção válida \n");
+            system("pause");
+            system("cls");
+            subMenuTipoPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida,lab);
+	}
 }
 //Função que gera o Menu
 void menu(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
@@ -1105,7 +1391,7 @@ void menu(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listL
             
         case 2:
             system("cls");
-            subMenuProduzir(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
+            subMenuPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
             break;
             
         case 3:
