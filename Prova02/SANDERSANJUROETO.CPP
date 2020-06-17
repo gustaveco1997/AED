@@ -355,10 +355,10 @@ void produzVacinaLabComp(list <vacina> listLabRitmo,list <vacina> listLabEd,list
     it--;
 
 
-    printf("########## LABcomp Laboratório ##########\n");
-    printf("Produzindo Vacinas ...\n");
   
     if(contador != 15000 && contador < 15000){
+        printf("########## LABcomp Laboratório ##########\n");
+        printf("Produzindo Vacinas ...\n");
         sobra = 15000 - contador;
         for(i=0;i<sobra;i++){       	
             vacinas_Struct.numero_vacina = rand();
@@ -1039,11 +1039,12 @@ void entregaVacinaPaisAntartida(list <vacina> listLabRitmo,list <vacina> listLab
     exit;
 }
 
+//Função que faz a pesquisa pela data de validade
 void pesquisaDataValidade(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
-    int laboratorio = lab;
-    int diaValidade;
-    int mesValidade;
-    int anoValidade;
+    int laboratorio = lab; //Variável para armazenar qual o laboratório
+    int diaValidade; //Variável para armazenar o dia de validade digitado
+    int mesValidade; //Variável para armazenar o mês de validade digitado
+    int anoValidade; //Variável para armazenar o ano de validade digitado
     int i=0;
     
 
@@ -1118,11 +1119,12 @@ void pesquisaDataValidade(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
 
 }
 
+//Função que faz a pesquisa pela data de fabricação
 void pesquisaDataFabricacao(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
-    int laboratorio = lab;
-    int diaFabricacao;
-    int mesFabricacao;
-    int anoFabricacao;
+    int laboratorio = lab; //Variável para armazenar qual o laboratório
+    int diaFabricacao; //Variável para armazenar o dia de fabricação digitado
+    int mesFabricacao; //Variável para armazenar o mês de fabricação digitado
+    int anoFabricacao; //Variável para armazenar o ano de fabricação digitado
     int i=0;
     
 
@@ -1193,10 +1195,11 @@ void pesquisaDataFabricacao(list <vacina> listLabRitmo,list <vacina> listLabEd,l
 
 }
 
+//Função que faz pesquisa pelo número da vacina
 void pesquisaNumeroVacina(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
-    int laboratorio = lab;
-    int numeroVacina;
-    int i=0;
+    int laboratorio = lab; //Variável para armazenar o número referente ao laboratório
+    int numeroVacina; //Variável para armazenar o número da vacina digitada
+    int i=0; //Variável para contar !
     
     printf("Digite o número da vacina : ");
     scanf("%d",&numeroVacina);
@@ -1257,12 +1260,11 @@ void pesquisaNumeroVacina(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
 
 }
 
+//Função que faz a pesquisa pelo nome do Laboratório
 void pesquisaNomeLaboratorio(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
     int laboratorio = lab;
     int i=0;
-    
-    
-    
+
     if(laboratorio == 1){
         char Nomelaboratorio[40] = "LAB-ritmo";     
         list<vacina>::iterator it;
@@ -1318,7 +1320,6 @@ void pesquisaNomeLaboratorio(list <vacina> listLabRitmo,list <vacina> listLabEd,
 
 //Função que gera o submenu para produção de vacinas
 void subMenuProduzir(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
-    
     int opcao; //Variável para armazenar opção escolhida
   
     system("cls");
@@ -1363,6 +1364,7 @@ void subMenuProduzir(list <vacina> listLabRitmo,list <vacina> listLabEd,list <va
 //Função que gera o Sub Menu de retirada das vacinas
 void subMenuRetirar (list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
 	int opcao; //Variável para armazenar a opção escolhida
+
 	system("cls");
 	printf("Escolha de qual empresa deseja retirar a vacina : ");
 	printf("\n1 - LabRitmo\n2 - LabEd\n3 - LabRaja\n4 - LabComp\n5 - Voltar");
@@ -1402,8 +1404,10 @@ void subMenuRetirar (list <vacina> listLabRitmo,list <vacina> listLabEd,list <va
 	}
 }
 
+//Função que gera o subMenu de Entrega
 void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
-	int opcao;
+	int opcao; //Variável para armazenar a opção escolhida
+
 	system("cls");
 	printf("Escolha em qual continente será entregue as vacinas !");
 	printf("\n1 - América do Norte\n2 - América do Sul\n3 - América Central\n4 - África\n5 - Ásia\n6 - Europa\n7 - Oceania\n8 - Antártida\n9 - Voltar");
@@ -1526,8 +1530,10 @@ void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vac
 	
 }
 
+//Função que gera o subMenu de entrega aos países
 void subMenuEntregaPaises(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
-	int opcao;
+	int opcao; //Variável para armazenar a opção escolhida
+
 	system("cls");
 	printf("Escolha o Centro de Distribuição");
 	printf("\n1 - CD América do Norte\n2 - CD América do Sul\n3 - CD América Central\n4 - CD África\n5 - CD Ásia\n6 - CD Europa\n7 - CD Oceania\n8 - CD Antártida\n9 - Voltar");
@@ -1645,8 +1651,9 @@ void subMenuEntregaPaises(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
 	
 }
 
+//Função que gera o submenu de pesqusia
 void subMenuPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
-    int opcao;
+    int opcao; //Variável para armazenar a opção escolhidas
 	system("cls");
 	printf("Escolha de qual laboratório deseja realizar a pesquisa : ");
 	printf("\n1 - Lab-Ritmo\n2 - Lab-Ed\n3 - Lab-Raja\n4 - Lab-Comp\n5 - Voltar");
@@ -1714,8 +1721,9 @@ void subMenuPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,list <v
 	}
 }
 
+//Função que gera o subMenu dos tipos de pesquisa
 void subMenuTipoPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
-    int opcao;
+    int opcao; //Variável para armazenar a opção escolhida
     int laboratorio = lab;
 	system("cls");
 	printf("Escolha o tipo da pesquisa : ");
@@ -1757,6 +1765,7 @@ void subMenuTipoPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,lis
             subMenuTipoPesquisa(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida,lab);
 	}
 }
+
 //Função que gera o Menu
 void menu(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     int opcao; //Variável para armazenar a opção escolhida
