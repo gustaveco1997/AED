@@ -218,14 +218,14 @@ void produzVacinaLabRitmo(list<vacina> listLabRitmo, list<vacina> listLabEd, lis
 //Função que produz vacinas para o LabEd
 void produzVacinaLabEd(list<vacina> listLabRitmo, list<vacina> listLabEd, list<vacina> listLabRaja, list<vacina> listLabComp, queue<vacina> filaLabRitmo, queue<vacina> filaLabEd, queue<vacina> filaLabRaja, queue<vacina> filaLabComp, stack<vacina> pilhaLogisLabRitmo, stack<vacina> pilhaLogisLabEd, stack<vacina> pilhaLogisLabRaja, stack<vacina> pilhaLogisLabComp, stack<vacina> pilhaCDAmericaSul, stack<vacina> pilhaCDAmericaNorte, stack<vacina> pilhaCDAmericaCentral, stack<vacina> pilhaCDOceania, stack<vacina> pilhaCDAsia, stack<vacina> pilhaCDEuropa, stack<vacina> pilhaCDAntartida, stack<vacina> pilhaCDAfrica)
 {
-    vacina vacinas_Struct;       //Struct do tipo vacina !
-    srand((unsigned)time(NULL)); //Definindo a função rand() para gerar um número baseado no tempo atual
-    int sobra;                   //Variável para armazer quantidade sobrando na fila
-    int i;                       //Variável para laços de repetição
-    int diaFabricacao;     //Variaǘel para aramazenar o dia de fabricação
-    int mesFabricacao;     //Variaǘel para aramazenar o mês de fabricação
-    int anoFabricacao;     //Variaǘel para aramazenar o ano de fabricação
-    int contador = 0;      //Variaǘel para contar a quantidade de registros naquela data
+    vacina vacinas_Struct;              //Struct do tipo vacina !
+    srand((unsigned)time(NULL));        //Definindo a função rand() para gerar um número baseado no tempo atual
+    int sobra;                          //Variável para armazer quantidade sobrando na fila
+    int i;                              //Variável para laços de repetição
+    int diaFabricacao;                  //Variaǘel para aramazenar o dia de fabricação
+    int mesFabricacao;                  //Variaǘel para aramazenar o mês de fabricação
+    int anoFabricacao;                  //Variaǘel para aramazenar o ano de fabricação
+    int contador = 0;                   //Variaǘel para contar a quantidade de registros naquela data
     char nomeLaboratorio[40] = "LABed"; //Variável com o nome do Laboratório
 
     printf("Digite a dia de fabricação : \n");
@@ -329,10 +329,10 @@ void produzVacinaLabRaja(list<vacina> listLabRitmo, list<vacina> listLabEd, list
     srand((unsigned)time(NULL)); //Definindo a função rand() para gerar um número baseado no tempo atual
     int sobra;                   //Variável para armazer quantidade sobrando na fila
     int i;                       //Variável para laços de repetição
-    int diaFabricacao;     //Variaǘel para aramazenar o dia de fabricação
-    int mesFabricacao;     //Variaǘel para aramazenar o mês de fabricação
-    int anoFabricacao;     //Variaǘel para aramazenar o ano de fabricação
-    int contador = 0;      //Variaǘel para contar a quantidade de registros naquela data
+    int diaFabricacao;           //Variaǘel para aramazenar o dia de fabricação
+    int mesFabricacao;           //Variaǘel para aramazenar o mês de fabricação
+    int anoFabricacao;           //Variaǘel para aramazenar o ano de fabricação
+    int contador = 0;            //Variaǘel para contar a quantidade de registros naquela data
 
     char nomeLaboratorio[40] = "LABraja"; //Variável com o nome do laboratório
 
@@ -432,14 +432,14 @@ void produzVacinaLabRaja(list<vacina> listLabRitmo, list<vacina> listLabEd, list
 //Função que produz vacinas para o LabComp
 void produzVacinaLabComp(list<vacina> listLabRitmo, list<vacina> listLabEd, list<vacina> listLabRaja, list<vacina> listLabComp, queue<vacina> filaLabRitmo, queue<vacina> filaLabEd, queue<vacina> filaLabRaja, queue<vacina> filaLabComp, stack<vacina> pilhaLogisLabRitmo, stack<vacina> pilhaLogisLabEd, stack<vacina> pilhaLogisLabRaja, stack<vacina> pilhaLogisLabComp, stack<vacina> pilhaCDAmericaSul, stack<vacina> pilhaCDAmericaNorte, stack<vacina> pilhaCDAmericaCentral, stack<vacina> pilhaCDOceania, stack<vacina> pilhaCDAsia, stack<vacina> pilhaCDEuropa, stack<vacina> pilhaCDAntartida, stack<vacina> pilhaCDAfrica)
 {
-    vacina vacinas_Struct;       //Struct do tipo vacina
-    srand((unsigned)time(NULL)); //Definindo a função rand() para gerar um número baseado no tempo atual
-    int sobra;                   //Variável para armazer quantidade sobrando na fila
-    int i;                       //Variável para laços de repetição
-    int diaFabricacao;     //Variaǘel para aramazenar o dia de fabricação
-    int mesFabricacao;     //Variaǘel para aramazenar o mês de fabricação
-    int anoFabricacao;     //Variaǘel para aramazenar o ano de fabricação
-    int contador = 0;      //Variaǘel para contar a quantidade de registros naquela data
+    vacina vacinas_Struct;                //Struct do tipo vacina
+    srand((unsigned)time(NULL));          //Definindo a função rand() para gerar um número baseado no tempo atual
+    int sobra;                            //Variável para armazer quantidade sobrando na fila
+    int i;                                //Variável para laços de repetição
+    int diaFabricacao;                    //Variaǘel para aramazenar o dia de fabricação
+    int mesFabricacao;                    //Variaǘel para aramazenar o mês de fabricação
+    int anoFabricacao;                    //Variaǘel para aramazenar o ano de fabricação
+    int contador = 0;                     //Variaǘel para contar a quantidade de registros naquela data
     char nomeLaboratorio[40] = "LABcomp"; //Variável com o nome do laboratório
 
     printf("Digite a dia de fabricação : \n");
