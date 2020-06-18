@@ -379,9 +379,9 @@ void produzVacinaLabRaja(list <vacina> listLabRitmo,list <vacina> listLabEd,list
     }else{
         printf("Não é possível produzir mais vacinas, pois atingiu a capacidade maxima diária de 18000 vacinas !");
     }
- 	getch();
+    getch();
     subMenuProduzir(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
- 	exit;
+    exit;
 
 }
 
@@ -482,7 +482,7 @@ void produzVacinaLabComp(list <vacina> listLabRitmo,list <vacina> listLabEd,list
     }
     getch();
     subMenuProduzir(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
- 	exit;
+    exit;
 }
 
 /**
@@ -534,9 +534,9 @@ void retiraVacinaLabRitmo(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
 	}else{
 		printf("Impossível retirar vacinas, pois a fila do LabRitmo está vazia !");
 	}	
-	getch();
+    getch();
     subMenuRetirar(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
- 	exit;
+    exit;
 }
 
 /**
@@ -588,9 +588,9 @@ void retiraVacinaLabEd(list <vacina> listLabRitmo,list <vacina> listLabEd,list <
 	}else{
 		printf("Impossível retirar vacinas, pois a fila do LabEd está vazia !");
 	}	
-	getch();
+    getch();
     subMenuRetirar(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
- 	exit;
+    exit;
 }
 
 /**
@@ -642,9 +642,9 @@ void retiraVacinaLabRaja(list <vacina> listLabRitmo,list <vacina> listLabEd,list
 	}else{
 		printf("Impossível retirar vacinas, pois a fila do LabRaja está vazia !");
 	}
-	getch();
+    getch();
     subMenuRetirar(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
- 	exit;	
+    exit;	
 }
 
 /**
@@ -696,9 +696,9 @@ void retiraVacinaLabComp(list <vacina> listLabRitmo,list <vacina> listLabEd,list
 	}else{
 		printf("Impossível retirar vacinas, pois a fila do LabComp está vazia !");
 	}
-	getch();
+    getch();
     subMenuRetirar(listLabRitmo,listLabEd,listLabRaja,listLabComp,filaLabRitmo,filaLabEd,filaLabRaja,filaLabComp,pilhaLogisLabRitmo,pilhaLogisLabEd,pilhaLogisLabRaja,pilhaLogisLabComp,pilhaCDAmericaSul,pilhaCDAmericaNorte,pilhaCDAmericaCentral,pilhaCDEuropa,pilhaCDAfrica,pilhaCDAsia,pilhaCDOceania,pilhaCDAntartida);
- 	exit;	
+    exit;	
 }
 
 /**
