@@ -38,6 +38,7 @@ void subMenuRetirar (list <vacina> listLabRitmo,list <vacina> listLabEd,list <va
 void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 void subMenuTipoPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab);
 void subMenuPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
+
 //Declaração de funções de Produção de cada Laboratório
 void produzVacinaLabRitmo(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
 void produzVacinaLabEd(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica);
@@ -77,6 +78,31 @@ void pesquisaNumeroVacina(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
 void pesquisaDataValidade(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab);
 void pesquisaDataFabricacao(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab);
 void pesquisaNomeLaboratorio(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab);
+
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 
 //Função que produz vacinas para o LabRitmo
 void produzVacinaLabRitmo(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
@@ -156,6 +182,31 @@ void produzVacinaLabRitmo(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
   
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
+
 //Função que produz vacinas para o LabEd
 void produzVacinaLabEd(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     vacina vacinas_Struct; //Struct do tipo vacina !
@@ -231,7 +282,33 @@ void produzVacinaLabEd(list <vacina> listLabRitmo,list <vacina> listLabEd,list <
     exit;
 }
 
-//Função que produz vacinas para o LabRaja
+
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
+
+//Função que produz Vacinas no Laboratório LabRaja
 void produzVacinaLabRaja(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     vacina vacinas_Struct;//Struct do tipo vacina
     srand( (unsigned)time(NULL) ); //Definindo a função rand() para gerar um número baseado no tempo atual
@@ -307,6 +384,31 @@ void produzVacinaLabRaja(list <vacina> listLabRitmo,list <vacina> listLabEd,list
  	exit;
 
 }
+
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função que produz vacinas para o LabComp
 void produzVacinaLabComp(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
   	vacina vacinas_Struct; //Struct do tipo vacina
@@ -383,6 +485,30 @@ void produzVacinaLabComp(list <vacina> listLabRitmo,list <vacina> listLabEd,list
  	exit;
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função que retira vacina do labRitmo
 void retiraVacinaLabRitmo(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
 	
@@ -413,6 +539,30 @@ void retiraVacinaLabRitmo(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
  	exit;
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função que retira vacina do labEd
 void retiraVacinaLabEd(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
 	
@@ -443,6 +593,30 @@ void retiraVacinaLabEd(list <vacina> listLabRitmo,list <vacina> listLabEd,list <
  	exit;
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função que retira vacina do labRaja
 void retiraVacinaLabRaja(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
 	
@@ -473,6 +647,30 @@ void retiraVacinaLabRaja(list <vacina> listLabRitmo,list <vacina> listLabEd,list
  	exit;	
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função que retira vacina do labComp
 void retiraVacinaLabComp(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
 	
@@ -503,6 +701,30 @@ void retiraVacinaLabComp(list <vacina> listLabRitmo,list <vacina> listLabEd,list
  	exit;	
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função para entregar vacinas na América do Sul
 void entregaVacinaAmericaSul(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     
@@ -555,6 +777,30 @@ void entregaVacinaAmericaSul(list <vacina> listLabRitmo,list <vacina> listLabEd,
     
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função para entregar vacinas na América do Norte
 void entregaVacinaAmericaNorte(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     
@@ -607,6 +853,30 @@ void entregaVacinaAmericaNorte(list <vacina> listLabRitmo,list <vacina> listLabE
     
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função para entregar vacinas na América Central
 void entregaVacinaAmericaCentral(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     
@@ -659,6 +929,30 @@ void entregaVacinaAmericaCentral(list <vacina> listLabRitmo,list <vacina> listLa
     
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função para entregar vacinas na Europa
 void entregaVacinaEuropa(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     
@@ -711,6 +1005,30 @@ void entregaVacinaEuropa(list <vacina> listLabRitmo,list <vacina> listLabEd,list
     
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função para entregar vacinas na Oceania
 void entregaVacinaOceania(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     
@@ -763,6 +1081,30 @@ void entregaVacinaOceania(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
     
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função para entregar vacinas na Ásia
 void entregaVacinaAsia(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     
@@ -815,6 +1157,30 @@ void entregaVacinaAsia(list <vacina> listLabRitmo,list <vacina> listLabEd,list <
     
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função para entregar vacinas na Antártida
 void entregaVacinaAntartida(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     
@@ -867,6 +1233,30 @@ void entregaVacinaAntartida(list <vacina> listLabRitmo,list <vacina> listLabEd,l
     
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função para entregar vacinas na Africa
 void entregaVacinaAfrica(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     
@@ -919,6 +1309,30 @@ void entregaVacinaAfrica(list <vacina> listLabRitmo,list <vacina> listLabEd,list
     
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função que entrega vacinas aos países da América do Norte
 void entregaVacinaPaisAmericaNorte(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     int i; //Variável para estrutura de repetição
@@ -934,6 +1348,30 @@ void entregaVacinaPaisAmericaNorte(list <vacina> listLabRitmo,list <vacina> list
     exit;
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função que entrega vacinas aos países da América do Sul
 void entregaVacinaPaisAmericaSul(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     int i; //Variável para estrutura de repetição
@@ -949,6 +1387,30 @@ void entregaVacinaPaisAmericaSul(list <vacina> listLabRitmo,list <vacina> listLa
     exit;
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função que entrega vacinas aos países da América Central
 void entregaVacinaPaisAmericaCentral(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     int i; //Variável para estrutura de repetição
@@ -964,6 +1426,30 @@ void entregaVacinaPaisAmericaCentral(list <vacina> listLabRitmo,list <vacina> li
     exit;
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função que entrega vacinas aos países da Europa
 void entregaVacinaPaisEuropa(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     int i; //Variável para estrutura de repetição
@@ -979,6 +1465,30 @@ void entregaVacinaPaisEuropa(list <vacina> listLabRitmo,list <vacina> listLabEd,
     exit;
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função que entrega vacinas aos países da África
 void entregaVacinaPaisAfrica(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     int i; //Variável para estrutura de repetição
@@ -994,6 +1504,30 @@ void entregaVacinaPaisAfrica(list <vacina> listLabRitmo,list <vacina> listLabEd,
     exit;
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função que entrega vacinas aos países da Ásia
 void entregaVacinaPaisAsia(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     int i; //Variável para estrutura de repetição
@@ -1009,6 +1543,30 @@ void entregaVacinaPaisAsia(list <vacina> listLabRitmo,list <vacina> listLabEd,li
     exit;
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função que entrega vacinas aos países da Oceania
 void entregaVacinaPaisOceania(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     int i; //Variável para estrutura de repetição
@@ -1024,6 +1582,30 @@ void entregaVacinaPaisOceania(list <vacina> listLabRitmo,list <vacina> listLabEd
     exit;
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+*/
 //Função que entrega vacinas aos países da Antártida
 void entregaVacinaPaisAntartida(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     int i; //Variável para estrutura de repetição
@@ -1039,6 +1621,31 @@ void entregaVacinaPaisAntartida(list <vacina> listLabRitmo,list <vacina> listLab
     exit;
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+    *@param lab
+*/
 //Função que faz a pesquisa pela data de validade
 void pesquisaDataValidade(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
     int laboratorio = lab; //Variável para armazenar qual o laboratório
@@ -1119,6 +1726,31 @@ void pesquisaDataValidade(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
 
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+    *@param lab
+*/
 //Função que faz a pesquisa pela data de fabricação
 void pesquisaDataFabricacao(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
     int laboratorio = lab; //Variável para armazenar qual o laboratório
@@ -1195,6 +1827,31 @@ void pesquisaDataFabricacao(list <vacina> listLabRitmo,list <vacina> listLabEd,l
 
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+    *@param lab
+*/
 //Função que faz pesquisa pelo número da vacina
 void pesquisaNumeroVacina(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
     int laboratorio = lab; //Variável para armazenar o número referente ao laboratório
@@ -1260,6 +1917,31 @@ void pesquisaNumeroVacina(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
 
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+    *@param lab
+*/
 //Função que faz a pesquisa pelo nome do Laboratório
 void pesquisaNomeLaboratorio(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
     int laboratorio = lab;
@@ -1318,6 +2000,31 @@ void pesquisaNomeLaboratorio(list <vacina> listLabRitmo,list <vacina> listLabEd,
 
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+    
+*/
 //Função que gera o submenu para produção de vacinas
 void subMenuProduzir(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     int opcao; //Variável para armazenar opção escolhida
@@ -1361,6 +2068,31 @@ void subMenuProduzir(list <vacina> listLabRitmo,list <vacina> listLabEd,list <va
 
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+    
+*/
 //Função que gera o Sub Menu de retirada das vacinas
 void subMenuRetirar (list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
 	int opcao; //Variável para armazenar a opção escolhida
@@ -1404,6 +2136,31 @@ void subMenuRetirar (list <vacina> listLabRitmo,list <vacina> listLabEd,list <va
 	}
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+    
+*/
 //Função que gera o subMenu de Entrega
 void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
 	int opcao; //Variável para armazenar a opção escolhida
@@ -1530,6 +2287,31 @@ void subMenuEntrega(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vac
 	
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+    
+*/
 //Função que gera o subMenu de entrega aos países
 void subMenuEntregaPaises(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
 	int opcao; //Variável para armazenar a opção escolhida
@@ -1651,6 +2433,31 @@ void subMenuEntregaPaises(list <vacina> listLabRitmo,list <vacina> listLabEd,lis
 	
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+    
+*/
 //Função que gera o submenu de pesqusia
 void subMenuPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     int opcao; //Variável para armazenar a opção escolhidas
@@ -1721,6 +2528,32 @@ void subMenuPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,list <v
 	}
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+    *@param lab
+    
+*/
 //Função que gera o subMenu dos tipos de pesquisa
 void subMenuTipoPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica,int lab){
     int opcao; //Variável para armazenar a opção escolhida
@@ -1766,6 +2599,32 @@ void subMenuTipoPesquisa (list <vacina> listLabRitmo,list <vacina> listLabEd,lis
 	}
 }
 
+/**
+    *@param listLabRitmo
+    *@param listLabEd
+    *@param listLabRaja
+    *@param listLabComp
+    *@param filaLabRitmo
+    *@param filaLabEd
+    *@param filaLabRaja
+    *@param listLabComp
+    *@param listLabRitmo
+    *@param listLabRitmo
+    *@param pilhaLogisLabRitmo
+    *@param pilhaLogisLabEd
+    *@param pilhaLogisLabRaja
+    *@param pilhaLogisLabComp
+    *@param pilhaCDAmericaSul
+    *@param pilhaCDAmericaNorte
+    *@param pilhaCDAmericaCentral
+    *@param pilhaCDOceania
+    *@param pilhaCDAsia
+    *@param pilhaCDEuropa
+    *@param pilhaCDAntartida
+    *@param pilhaCDAfrica
+    *@param lab
+    
+*/
 //Função que gera o Menu
 void menu(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listLabRaja,list <vacina> listLabComp,queue <vacina> filaLabRitmo,queue <vacina> filaLabEd,queue <vacina> filaLabRaja,queue <vacina> filaLabComp,stack<vacina> pilhaLogisLabRitmo,stack<vacina> pilhaLogisLabEd,stack<vacina> pilhaLogisLabRaja,stack<vacina> pilhaLogisLabComp,stack<vacina> pilhaCDAmericaSul,stack<vacina> pilhaCDAmericaNorte,stack<vacina> pilhaCDAmericaCentral,stack<vacina> pilhaCDOceania,stack<vacina> pilhaCDAsia,stack<vacina> pilhaCDEuropa,stack<vacina> pilhaCDAntartida,stack<vacina> pilhaCDAfrica){
     int opcao; //Variável para armazenar a opção escolhida
@@ -1808,6 +2667,10 @@ void menu(list <vacina> listLabRitmo,list <vacina> listLabEd,list <vacina> listL
     }
 }
 
+/**
+    @param modo
+    @param caminho
+*/
 //Função que Abre o arquivo retornando o hash
 FILE* AbreArquivo(char modo, char caminho[30]){
     FILE *arquivo;
@@ -1829,12 +2692,18 @@ FILE* AbreArquivo(char modo, char caminho[30]){
     return arquivo;
 }
 
+/**
+    @param arquivo
+*/
 //Função que fecha o arquivo
 void FecharArquivo(FILE *arquivo)
 {
     fclose(arquivo);
 }
 
+/**
+    @param valor
+*/
 //Função que calcula o hash
 float calcula_hash_inteiro(int valor){
     std::tr1::hash<float> hash_fn;
