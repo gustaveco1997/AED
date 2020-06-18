@@ -111,10 +111,10 @@ void produzVacinaLabRitmo(list<vacina> listLabRitmo, list<vacina> listLabEd, lis
     vacina vacinas_Struct; //Struct do tipo vacina
     int sobra;             //Variável para armazer quantidade sobrando na fila
     int i;                 //Variável para laços de repetição
-    int diaFabricacao;
-    int mesFabricacao;
-    int anoFabricacao;
-    int contador = 0;
+    int diaFabricacao;     //Variaǘel para aramazenar o dia de fabricação
+    int mesFabricacao;     //Variaǘel para aramazenar o mês de fabricação
+    int anoFabricacao;     //Variaǘel para aramazenar o ano de fabricação
+    int contador = 0;      //Variaǘel para contar a quantidade de registros naquela data
 
     srand((unsigned)time(NULL));        //Definindo a função rand() para gerar um número baseado no tempo atual
     char laboratorio[40] = "LAB-ritmo"; //Variável com o nome do laboratório
@@ -222,10 +222,10 @@ void produzVacinaLabEd(list<vacina> listLabRitmo, list<vacina> listLabEd, list<v
     srand((unsigned)time(NULL)); //Definindo a função rand() para gerar um número baseado no tempo atual
     int sobra;                   //Variável para armazer quantidade sobrando na fila
     int i;                       //Variável para laços de repetição
-    int diaFabricacao;
-    int mesFabricacao;
-    int anoFabricacao;
-    int contador = 0;
+    int diaFabricacao;     //Variaǘel para aramazenar o dia de fabricação
+    int mesFabricacao;     //Variaǘel para aramazenar o mês de fabricação
+    int anoFabricacao;     //Variaǘel para aramazenar o ano de fabricação
+    int contador = 0;      //Variaǘel para contar a quantidade de registros naquela data
     char nomeLaboratorio[40] = "LABed"; //Variável com o nome do Laboratório
 
     printf("Digite a dia de fabricação : \n");
@@ -329,10 +329,11 @@ void produzVacinaLabRaja(list<vacina> listLabRitmo, list<vacina> listLabEd, list
     srand((unsigned)time(NULL)); //Definindo a função rand() para gerar um número baseado no tempo atual
     int sobra;                   //Variável para armazer quantidade sobrando na fila
     int i;                       //Variável para laços de repetição
-    int diaFabricacao;
-    int mesFabricacao;
-    int anoFabricacao;
-    int contador = 0;
+    int diaFabricacao;     //Variaǘel para aramazenar o dia de fabricação
+    int mesFabricacao;     //Variaǘel para aramazenar o mês de fabricação
+    int anoFabricacao;     //Variaǘel para aramazenar o ano de fabricação
+    int contador = 0;      //Variaǘel para contar a quantidade de registros naquela data
+
     char nomeLaboratorio[40] = "LABraja"; //Variável com o nome do laboratório
 
     printf("Digite a dia de fabricação : \n");
@@ -435,10 +436,10 @@ void produzVacinaLabComp(list<vacina> listLabRitmo, list<vacina> listLabEd, list
     srand((unsigned)time(NULL)); //Definindo a função rand() para gerar um número baseado no tempo atual
     int sobra;                   //Variável para armazer quantidade sobrando na fila
     int i;                       //Variável para laços de repetição
-    int diaFabricacao;
-    int mesFabricacao;
-    int anoFabricacao;
-    int contador = 0;
+    int diaFabricacao;     //Variaǘel para aramazenar o dia de fabricação
+    int mesFabricacao;     //Variaǘel para aramazenar o mês de fabricação
+    int anoFabricacao;     //Variaǘel para aramazenar o ano de fabricação
+    int contador = 0;      //Variaǘel para contar a quantidade de registros naquela data
     char nomeLaboratorio[40] = "LABcomp"; //Variável com o nome do laboratório
 
     printf("Digite a dia de fabricação : \n");
